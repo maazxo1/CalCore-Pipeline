@@ -18,7 +18,8 @@
   <a href="#-pipeline-architecture">Architecture</a> ·
   <a href="#-model-accuracy">Accuracy</a> ·
   <a href="#-api-usage">API</a> ·
-  <a href="#%EF%B8%8F-configuration">Config</a>
+  <a href="#%EF%B8%8F-configuration">Config</a> ·
+  <a href="SETUP.md">Full Setup Guide</a>
 </p>
 
 ---
@@ -80,15 +81,15 @@ Fine-tuned on **Food-101** — 101,000 images, 101 classes, 25 epochs.
 
 Validation predictions from the trained YOLOv8l detector:
 
-![Val Batch 0](runs/detect/combined/val_batch0_pred.jpg)
+![Val Batch 0](assets/val_batch0_pred.jpg)
 
-![Val Batch 1](runs/detect/combined/val_batch1_pred.jpg)
+![Val Batch 1](assets/val_batch1_pred.jpg)
 
 <table>
 <tr>
-<td><img src="runs/detect/combined/BoxPR_curve.png"/><br/><sub>PR Curve</sub></td>
-<td><img src="runs/detect/combined/BoxF1_curve.png"/><br/><sub>F1 Curve</sub></td>
-<td><img src="runs/detect/combined/results.png"/><br/><sub>Training Curves</sub></td>
+<td><img src="assets/BoxPR_curve.png"/><br/><sub>PR Curve</sub></td>
+<td><img src="assets/BoxF1_curve.png"/><br/><sub>F1 Curve</sub></td>
+<td><img src="assets/results.png"/><br/><sub>Training Curves</sub></td>
 </tr>
 </table>
 
