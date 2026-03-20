@@ -1,0 +1,18 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+opencv-python==4.8.1.78
+pillow==10.1.0
+numpy==1.24.3
+requests==2.32.5
+python-dotenv==1.0.1
+pytest==8.3.5
+pytest-benchmark==5.1.0
+scipy==1.11.4
+torch==2.7.1
+torchvision==0.22.1
+accelerate>=1.0.0
+safetensors>=0.4.0
+transformers==4.57.1
+ultralytics==8.0.196
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git

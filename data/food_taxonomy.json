@@ -1,0 +1,3208 @@
+{
+  "version": "2026.03.03",
+  "global": {
+    "single_item_cap_g": 4000,
+    "single_item_cap_g_with_calibration": 5000,
+    "default_min_weight_g": 5
+  },
+  "category_caps_g": {
+    "egg": 180,
+    "bread_pastry": 400,
+    "fruit": 700,
+    "sandwich_wrap": 600,
+    "rice_pasta_curry_bowl": 850,
+    "salad": 500,
+    "protein": 600,
+    "vegetable": 400,
+    "snack": 250,
+    "drink": 500,
+    "condiment_sauce": 200,
+    "default_unknown": 450
+  },
+  "category_fallback_nutrition_per100g": {
+    "egg": {
+      "calories": 155,
+      "protein": 13.0,
+      "carbs": 1.1,
+      "fat": 11.0,
+      "fiber": 0.0
+    },
+    "bread_pastry": {
+      "calories": 280,
+      "protein": 8.0,
+      "carbs": 45.0,
+      "fat": 8.0,
+      "fiber": 2.0
+    },
+    "fruit": {
+      "calories": 60,
+      "protein": 0.8,
+      "carbs": 15.0,
+      "fat": 0.3,
+      "fiber": 2.0
+    },
+    "sandwich_wrap": {
+      "calories": 240,
+      "protein": 12.0,
+      "carbs": 28.0,
+      "fat": 9.0,
+      "fiber": 2.0
+    },
+    "rice_pasta_curry_bowl": {
+      "calories": 145,
+      "protein": 5.0,
+      "carbs": 20.0,
+      "fat": 5.0,
+      "fiber": 1.5
+    },
+    "salad": {
+      "calories": 75,
+      "protein": 3.0,
+      "carbs": 8.0,
+      "fat": 3.0,
+      "fiber": 2.5
+    },
+    "protein": {
+      "calories": 200,
+      "protein": 26.0,
+      "carbs": 0.0,
+      "fat": 10.0,
+      "fiber": 0.0
+    },
+    "vegetable": {
+      "calories": 65,
+      "protein": 2.5,
+      "carbs": 12.0,
+      "fat": 1.0,
+      "fiber": 3.0
+    },
+    "snack": {
+      "calories": 480,
+      "protein": 6.0,
+      "carbs": 55.0,
+      "fat": 25.0,
+      "fiber": 2.0
+    },
+    "drink": {
+      "calories": 50,
+      "protein": 0.5,
+      "carbs": 12.0,
+      "fat": 0.2,
+      "fiber": 0.0
+    },
+    "condiment_sauce": {
+      "calories": 160,
+      "protein": 5.0,
+      "carbs": 14.0,
+      "fat": 10.0,
+      "fiber": 3.0
+    },
+    "default_unknown": {
+      "calories": 150,
+      "protein": 5.0,
+      "carbs": 20.0,
+      "fat": 5.0,
+      "fiber": 2.0
+    }
+  },
+  "foods": [
+    {
+      "id": "egg",
+      "display_name": "Egg",
+      "aliases": [
+        "egg",
+        "fried egg",
+        "sunny side up",
+        "over easy",
+        "scrambled eggs",
+        "omelette",
+        "omelet",
+        "poached egg"
+      ],
+      "category": "egg",
+      "density_g_ml": 1.03,
+      "typical_serving_g": 50,
+      "min_weight_g": 15,
+      "max_weight_g": 220,
+      "usda_queries": [
+        "fried egg",
+        "egg cooked"
+      ]
+    },
+    {
+      "id": "boiled_egg",
+      "display_name": "Boiled Egg",
+      "aliases": [
+        "boiled egg",
+        "hard boiled egg",
+        "soft boiled egg",
+        "hard-boiled egg"
+      ],
+      "category": "egg",
+      "density_g_ml": 1.03,
+      "typical_serving_g": 50,
+      "min_weight_g": 15,
+      "max_weight_g": 150,
+      "usda_queries": [
+        "egg whole cooked hard-boiled",
+        "hard boiled egg",
+        "egg cooked hard boiled"
+      ]
+    },
+    {
+      "id": "eggs_benedict",
+      "display_name": "Eggs Benedict",
+      "aliases": [
+        "eggs benedict",
+        "eggs florentine"
+      ],
+      "category": "egg",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 230,
+      "min_weight_g": 100,
+      "max_weight_g": 450,
+      "usda_queries": [
+        "eggs benedict"
+      ]
+    },
+    {
+      "id": "shakshuka",
+      "display_name": "Shakshuka",
+      "aliases": [
+        "shakshuka",
+        "shakshouka"
+      ],
+      "category": "egg",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 280,
+      "min_weight_g": 150,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "shakshuka",
+        "egg tomato sauce"
+      ]
+    },
+    {
+      "id": "bread",
+      "display_name": "Bread",
+      "aliases": [
+        "bread",
+        "toast",
+        "white bread",
+        "whole wheat bread",
+        "sourdough",
+        "baguette",
+        "dinner roll",
+        "french toast",
+        "pita",
+        "pita bread",
+        "flatbread",
+        "focaccia",
+        "cornbread"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.26,
+      "typical_serving_g": 29,
+      "min_weight_g": 10,
+      "max_weight_g": 1000,
+      "usda_queries": [
+        "bread white",
+        "toast bread"
+      ]
+    },
+    {
+      "id": "croissant",
+      "display_name": "Croissant",
+      "aliases": [
+        "croissant"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.28,
+      "typical_serving_g": 57,
+      "min_weight_g": 25,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "croissant"
+      ]
+    },
+    {
+      "id": "bagel",
+      "display_name": "Bagel",
+      "aliases": [
+        "bagel"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.45,
+      "typical_serving_g": 98,
+      "min_weight_g": 50,
+      "max_weight_g": 220,
+      "usda_queries": [
+        "bagel plain"
+      ]
+    },
+    {
+      "id": "muffin",
+      "display_name": "Muffin",
+      "aliases": [
+        "muffin",
+        "blueberry muffin",
+        "bran muffin"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 113,
+      "min_weight_g": 40,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "muffin blueberry",
+        "muffin"
+      ]
+    },
+    {
+      "id": "donut",
+      "display_name": "Donut",
+      "aliases": [
+        "donut",
+        "doughnut",
+        "glazed donut"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.48,
+      "typical_serving_g": 60,
+      "min_weight_g": 25,
+      "max_weight_g": 180,
+      "usda_queries": [
+        "doughnut glazed"
+      ]
+    },
+    {
+      "id": "pretzel",
+      "display_name": "Pretzel",
+      "aliases": [
+        "pretzel",
+        "soft pretzel"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 115,
+      "min_weight_g": 40,
+      "max_weight_g": 280,
+      "usda_queries": [
+        "pretzel soft"
+      ]
+    },
+    {
+      "id": "garlic_bread",
+      "display_name": "Garlic Bread",
+      "aliases": [
+        "garlic bread",
+        "garlic toast"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.35,
+      "typical_serving_g": 45,
+      "min_weight_g": 20,
+      "max_weight_g": 180,
+      "usda_queries": [
+        "garlic bread"
+      ]
+    },
+    {
+      "id": "tortilla",
+      "display_name": "Tortilla",
+      "aliases": [
+        "tortilla",
+        "flour tortilla",
+        "corn tortilla"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 45,
+      "min_weight_g": 15,
+      "max_weight_g": 120,
+      "usda_queries": [
+        "tortilla flour"
+      ]
+    },
+    {
+      "id": "pancake",
+      "display_name": "Pancake",
+      "aliases": [
+        "pancake",
+        "flapjack"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 38,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "pancake plain"
+      ]
+    },
+    {
+      "id": "waffle",
+      "display_name": "Waffle",
+      "aliases": [
+        "waffle",
+        "belgian waffle"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.45,
+      "typical_serving_g": 75,
+      "min_weight_g": 30,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "waffle plain"
+      ]
+    },
+    {
+      "id": "naan",
+      "display_name": "Naan",
+      "aliases": [
+        "naan",
+        "naan bread",
+        "garlic naan"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 90,
+      "min_weight_g": 40,
+      "max_weight_g": 220,
+      "usda_queries": [
+        "naan bread"
+      ]
+    },
+    {
+      "id": "roti",
+      "display_name": "Roti",
+      "aliases": [
+        "roti",
+        "chapati",
+        "phulka",
+        "paratha",
+        "whole wheat roti"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 35,
+      "min_weight_g": 15,
+      "max_weight_g": 150,
+      "usda_queries": [
+        "roti",
+        "chapati flatbread"
+      ]
+    },
+    {
+      "id": "apple",
+      "display_name": "Apple",
+      "aliases": [
+        "apple",
+        "green apple",
+        "red apple"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.56,
+      "typical_serving_g": 182,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "apple raw"
+      ]
+    },
+    {
+      "id": "banana",
+      "display_name": "Banana",
+      "aliases": [
+        "banana"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 118,
+      "min_weight_g": 50,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "banana raw"
+      ]
+    },
+    {
+      "id": "orange",
+      "display_name": "Orange",
+      "aliases": [
+        "orange",
+        "tangerine",
+        "clementine",
+        "mandarin"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.77,
+      "typical_serving_g": 131,
+      "min_weight_g": 50,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "orange raw"
+      ]
+    },
+    {
+      "id": "mango",
+      "display_name": "Mango",
+      "aliases": [
+        "mango"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 165,
+      "min_weight_g": 60,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "mango raw"
+      ]
+    },
+    {
+      "id": "strawberry",
+      "display_name": "Strawberry",
+      "aliases": [
+        "strawberry",
+        "strawberries",
+        "fresh strawberry",
+        "whole strawberry",
+        "sliced strawberry",
+        "chocolate strawberry",
+        "chocolate dipped strawberry",
+        "white chocolate strawberry",
+        "dipped strawberry"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 15,
+      "min_weight_g": 5,
+      "max_weight_g": 150,
+      "usda_queries": [
+        "strawberries raw",
+        "fresh strawberry raw"
+      ]
+    },
+    {
+      "id": "berries",
+      "display_name": "Berries",
+      "aliases": [
+        "berries",
+        "mixed berries",
+        "fresh berries",
+        "berry",
+        "blueberry",
+        "blueberries",
+        "raspberry",
+        "raspberries",
+        "blackberry",
+        "blackberries",
+        "gooseberry",
+        "cranberry"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.7,
+      "typical_serving_g": 80,
+      "min_weight_g": 10,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "blueberries raw",
+        "raspberries raw",
+        "mixed berries"
+      ]
+    },
+    {
+      "id": "grapes",
+      "display_name": "Grapes",
+      "aliases": [
+        "grapes",
+        "grape"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 92,
+      "min_weight_g": 30,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "grapes raw"
+      ]
+    },
+    {
+      "id": "watermelon",
+      "display_name": "Watermelon",
+      "aliases": [
+        "watermelon"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.96,
+      "typical_serving_g": 280,
+      "min_weight_g": 80,
+      "max_weight_g": 8000,
+      "usda_queries": [
+        "watermelon raw"
+      ]
+    },
+    {
+      "id": "fruit",
+      "display_name": "Fruit",
+      "aliases": [
+        "fruit",
+        "pineapple",
+        "pear",
+        "peach",
+        "kiwi",
+        "avocado",
+        "melon",
+        "papaya",
+        "lychee",
+        "mixed fruit",
+        "fruit salad",
+        "fruit bowl",
+        "mixed berries"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 120,
+      "min_weight_g": 20,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "mixed fruit fresh raw",
+        "fruit salad fresh"
+      ]
+    },
+    {
+      "id": "salad",
+      "display_name": "Salad",
+      "aliases": [
+        "salad",
+        "green salad",
+        "mixed salad",
+        "garden salad",
+        "pasta salad",
+        "nicoise salad",
+        "ni\u00c3\u0192\u00c2\u00a7oise salad",
+        "caprese salad",
+        "tomato salad"
+      ],
+      "category": "salad",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "salad mixed greens"
+      ]
+    },
+    {
+      "id": "caesar_salad",
+      "display_name": "Caesar Salad",
+      "aliases": [
+        "caesar salad"
+      ],
+      "category": "salad",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 160,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "caesar salad"
+      ]
+    },
+    {
+      "id": "greek_salad",
+      "display_name": "Greek Salad",
+      "aliases": [
+        "greek salad",
+        "horiatiki"
+      ],
+      "category": "salad",
+      "density_g_ml": 0.7,
+      "typical_serving_g": 180,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "greek salad"
+      ]
+    },
+    {
+      "id": "coleslaw",
+      "display_name": "Coleslaw",
+      "aliases": [
+        "coleslaw",
+        "cole slaw"
+      ],
+      "category": "salad",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "coleslaw"
+      ]
+    },
+    {
+      "id": "rice",
+      "display_name": "Rice",
+      "aliases": [
+        "rice",
+        "white rice",
+        "plain rice",
+        "steamed rice",
+        "congee",
+        "rice porridge",
+        "jook",
+        "arroz"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.96,
+      "typical_serving_g": 197,
+      "min_weight_g": 60,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "cooked rice white"
+      ]
+    },
+    {
+      "id": "fried_rice",
+      "display_name": "Fried Rice",
+      "aliases": [
+        "fried rice",
+        "egg fried rice",
+        "yangzhou fried rice",
+        "nasi goreng",
+        "mee goreng"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 240,
+      "min_weight_g": 100,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "fried rice"
+      ]
+    },
+    {
+      "id": "biryani",
+      "display_name": "Biryani",
+      "aliases": [
+        "biryani",
+        "biriyani",
+        "chicken biryani",
+        "lamb biryani",
+        "mutton biryani",
+        "pulao",
+        "pilaf"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.92,
+      "typical_serving_g": 280,
+      "min_weight_g": 120,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "biryani chicken",
+        "biryani rice"
+      ]
+    },
+    {
+      "id": "risotto",
+      "display_name": "Risotto",
+      "aliases": [
+        "risotto",
+        "mushroom risotto"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 250,
+      "min_weight_g": 100,
+      "max_weight_g": 800,
+      "usda_queries": [
+        "risotto"
+      ]
+    },
+    {
+      "id": "pasta",
+      "display_name": "Pasta",
+      "aliases": [
+        "pasta",
+        "spaghetti",
+        "penne",
+        "fusilli",
+        "farfalle",
+        "fettuccine",
+        "macaroni",
+        "mac and cheese"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.92,
+      "typical_serving_g": 140,
+      "min_weight_g": 60,
+      "max_weight_g": 850,
+      "usda_queries": [
+        "pasta cooked",
+        "spaghetti cooked"
+      ]
+    },
+    {
+      "id": "lasagna",
+      "display_name": "Lasagna",
+      "aliases": [
+        "lasagna",
+        "lasagne"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 270,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "lasagna meat"
+      ]
+    },
+    {
+      "id": "noodles",
+      "display_name": "Noodles",
+      "aliases": [
+        "noodles",
+        "lo mein",
+        "chow mein",
+        "udon",
+        "soba",
+        "pad see ew",
+        "char kway teow",
+        "laksa noodles",
+        "cold noodles"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 180,
+      "min_weight_g": 80,
+      "max_weight_g": 800,
+      "usda_queries": [
+        "noodles cooked",
+        "lo mein"
+      ]
+    },
+    {
+      "id": "ramen",
+      "display_name": "Ramen",
+      "aliases": [
+        "ramen",
+        "ramen bowl"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.98,
+      "typical_serving_g": 400,
+      "min_weight_g": 200,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "ramen noodle soup"
+      ]
+    },
+    {
+      "id": "pho",
+      "display_name": "Pho",
+      "aliases": [
+        "pho",
+        "pho bo",
+        "pho ga",
+        "vietnamese noodle soup"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.97,
+      "typical_serving_g": 450,
+      "min_weight_g": 250,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "pho vietnamese soup",
+        "beef noodle soup"
+      ]
+    },
+    {
+      "id": "pad_thai",
+      "display_name": "Pad Thai",
+      "aliases": [
+        "pad thai",
+        "pad thai noodles"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.88,
+      "typical_serving_g": 280,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "pad thai",
+        "thai noodles"
+      ]
+    },
+    {
+      "id": "bibimbap",
+      "display_name": "Bibimbap",
+      "aliases": [
+        "bibimbap",
+        "korean rice bowl"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 320,
+      "min_weight_g": 180,
+      "max_weight_g": 800,
+      "usda_queries": [
+        "bibimbap korean rice bowl"
+      ]
+    },
+    {
+      "id": "soup",
+      "display_name": "Soup",
+      "aliases": [
+        "soup",
+        "stew",
+        "broth",
+        "tom yum",
+        "laksa",
+        "haleem",
+        "nihari",
+        "hot pot",
+        "french onion soup",
+        "minestrone",
+        "clam chowder",
+        "vegetable soup",
+        "beef stew",
+        "hot and sour soup",
+        "lobster bisque",
+        "lobster soup"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.98,
+      "typical_serving_g": 245,
+      "min_weight_g": 80,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "soup"
+      ]
+    },
+    {
+      "id": "miso_soup",
+      "display_name": "Miso Soup",
+      "aliases": [
+        "miso soup",
+        "miso"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.99,
+      "typical_serving_g": 240,
+      "min_weight_g": 100,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "miso soup"
+      ]
+    },
+    {
+      "id": "curry",
+      "display_name": "Curry",
+      "aliases": [
+        "curry",
+        "indian curry",
+        "thai curry",
+        "japanese curry",
+        "curry bowl",
+        "green curry",
+        "massaman curry",
+        "katsu curry",
+        "rendang",
+        "palak paneer",
+        "chana masala",
+        "aloo gobi",
+        "rajma",
+        "sabzi",
+        "korma",
+        "vegetable curry",
+        "mixed curry",
+        "mild curry"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 1.02,
+      "typical_serving_g": 280,
+      "min_weight_g": 120,
+      "max_weight_g": 850,
+      "usda_queries": [
+        "curry chicken",
+        "vegetable curry"
+      ]
+    },
+    {
+      "id": "tikka_masala",
+      "display_name": "Tikka Masala",
+      "aliases": [
+        "tikka masala",
+        "chicken tikka masala",
+        "butter chicken"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 1.03,
+      "typical_serving_g": 280,
+      "min_weight_g": 120,
+      "max_weight_g": 800,
+      "usda_queries": [
+        "chicken tikka masala",
+        "butter chicken"
+      ]
+    },
+    {
+      "id": "dal",
+      "display_name": "Dal",
+      "aliases": [
+        "dal",
+        "daal",
+        "lentil soup",
+        "dal fry",
+        "dal tadka",
+        "dal makhani",
+        "rajma"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 240,
+      "min_weight_g": 100,
+      "max_weight_g": 800,
+      "usda_queries": [
+        "lentil soup",
+        "dal lentil"
+      ]
+    },
+    {
+      "id": "chicken",
+      "display_name": "Chicken",
+      "aliases": [
+        "chicken",
+        "chicken breast",
+        "grilled chicken",
+        "roast chicken",
+        "rotisserie chicken",
+        "chicken thigh",
+        "chicken leg",
+        "chicken drumstick",
+        "yakitori",
+        "teriyaki chicken",
+        "char siu chicken"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 174,
+      "min_weight_g": 60,
+      "max_weight_g": 850,
+      "usda_queries": [
+        "chicken breast cooked",
+        "grilled chicken"
+      ]
+    },
+    {
+      "id": "chicken_wings",
+      "display_name": "Chicken Wings",
+      "aliases": [
+        "chicken wings",
+        "buffalo wings",
+        "wings"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "chicken wings cooked"
+      ]
+    },
+    {
+      "id": "steak",
+      "display_name": "Steak",
+      "aliases": [
+        "steak",
+        "beef steak",
+        "sirloin",
+        "ribeye",
+        "t-bone",
+        "tenderloin",
+        "strip steak"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.1,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "beef steak cooked",
+        "sirloin cooked"
+      ]
+    },
+    {
+      "id": "beef",
+      "display_name": "Beef",
+      "aliases": [
+        "beef",
+        "ground beef",
+        "meatball",
+        "meat loaf",
+        "meatloaf",
+        "beef mince"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.08,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "ground beef cooked",
+        "beef cooked"
+      ]
+    },
+    {
+      "id": "pork",
+      "display_name": "Pork",
+      "aliases": [
+        "pork",
+        "pork chop",
+        "pulled pork",
+        "pork belly",
+        "ribs",
+        "pork ribs"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 185,
+      "min_weight_g": 60,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "pork chop cooked",
+        "pork ribs cooked"
+      ]
+    },
+    {
+      "id": "bacon",
+      "display_name": "Bacon",
+      "aliases": [
+        "bacon",
+        "bacon strips",
+        "crispy bacon"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 34,
+      "min_weight_g": 10,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "bacon cooked"
+      ]
+    },
+    {
+      "id": "sausage",
+      "display_name": "Sausage",
+      "aliases": [
+        "sausage",
+        "hot dog",
+        "bratwurst",
+        "chorizo",
+        "link sausage",
+        "black pudding",
+        "blood sausage",
+        "banger",
+        "pork sausage",
+        "breakfast sausage",
+        "link",
+        "chipolata"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 85,
+      "min_weight_g": 30,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "pork sausage cooked",
+        "sausage link cooked",
+        "frankfurter beef"
+      ]
+    },
+    {
+      "id": "turkey",
+      "display_name": "Turkey",
+      "aliases": [
+        "turkey",
+        "roast turkey",
+        "turkey breast",
+        "turkey slice"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.06,
+      "typical_serving_g": 140,
+      "min_weight_g": 50,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "turkey breast cooked",
+        "roast turkey"
+      ]
+    },
+    {
+      "id": "lamb",
+      "display_name": "Lamb",
+      "aliases": [
+        "lamb",
+        "lamb chop",
+        "lamb shank",
+        "mutton"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.08,
+      "typical_serving_g": 180,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "lamb chop cooked",
+        "lamb cooked"
+      ]
+    },
+    {
+      "id": "fish",
+      "display_name": "Fish",
+      "aliases": [
+        "fish",
+        "fish fillet",
+        "cod",
+        "tilapia",
+        "halibut",
+        "sea bass",
+        "trout",
+        "fish and chips",
+        "grilled fish",
+        "lobster",
+        "crab",
+        "shellfish",
+        "seafood plate"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.04,
+      "typical_serving_g": 140,
+      "min_weight_g": 40,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "fish fillet cooked",
+        "cod cooked"
+      ]
+    },
+    {
+      "id": "salmon",
+      "display_name": "Salmon",
+      "aliases": [
+        "salmon",
+        "grilled salmon",
+        "baked salmon",
+        "smoked salmon",
+        "salmon fillet",
+        "teriyaki salmon",
+        "salmon sashimi"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.02,
+      "typical_serving_g": 170,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "salmon cooked",
+        "grilled salmon"
+      ]
+    },
+    {
+      "id": "shrimp",
+      "display_name": "Shrimp",
+      "aliases": [
+        "shrimp",
+        "prawns",
+        "prawn",
+        "grilled shrimp",
+        "shrimp cocktail"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 85,
+      "min_weight_g": 30,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "shrimp cooked",
+        "prawns cooked"
+      ]
+    },
+    {
+      "id": "tuna",
+      "display_name": "Tuna",
+      "aliases": [
+        "tuna",
+        "tuna steak",
+        "tuna salad",
+        "ahi tuna"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 140,
+      "min_weight_g": 40,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "tuna cooked",
+        "tuna fish"
+      ]
+    },
+    {
+      "id": "sushi",
+      "display_name": "Sushi",
+      "aliases": [
+        "sushi",
+        "sushi roll",
+        "maki",
+        "nigiri",
+        "temaki",
+        "sashimi"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 200,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "sushi rice roll",
+        "maki sushi"
+      ]
+    },
+    {
+      "id": "dumplings",
+      "display_name": "Dumplings",
+      "aliases": [
+        "dumplings",
+        "gyoza",
+        "potstickers",
+        "pierogi",
+        "wonton",
+        "xiaolongbao",
+        "soup dumplings"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "dumplings steamed",
+        "gyoza"
+      ]
+    },
+    {
+      "id": "spring_rolls",
+      "display_name": "Spring Rolls",
+      "aliases": [
+        "spring rolls",
+        "spring roll",
+        "egg rolls",
+        "lumpia"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "spring roll fried",
+        "egg roll"
+      ]
+    },
+    {
+      "id": "dim_sum",
+      "display_name": "Dim Sum",
+      "aliases": [
+        "dim sum",
+        "dim sum basket",
+        "har gow",
+        "siu mai",
+        "bao",
+        "char siu bao",
+        "pork bun",
+        "steamed bun",
+        "baozi"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "dim sum",
+        "steamed dumplings"
+      ]
+    },
+    {
+      "id": "samosa",
+      "display_name": "Samosa",
+      "aliases": [
+        "samosa",
+        "samosas",
+        "pakora",
+        "bhaji",
+        "bhajia",
+        "vada"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "samosa potato"
+      ]
+    },
+    {
+      "id": "pizza",
+      "display_name": "Pizza",
+      "aliases": [
+        "pizza",
+        "pizza slice",
+        "margherita pizza",
+        "pepperoni pizza",
+        "cheese pizza",
+        "veggie pizza",
+        "bbq chicken pizza",
+        "four seasons pizza",
+        "pizza margherita"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 107,
+      "min_weight_g": 40,
+      "max_weight_g": 2000,
+      "usda_queries": [
+        "pizza cheese",
+        "pizza pepperoni"
+      ]
+    },
+    {
+      "id": "sandwich",
+      "display_name": "Sandwich",
+      "aliases": [
+        "sandwich",
+        "club sandwich",
+        "submarine sandwich",
+        "sub",
+        "hoagie",
+        "hero",
+        "breakfast sandwich",
+        "banh mi",
+        "vietnamese sandwich",
+        "blt",
+        "grilled cheese",
+        "panini",
+        "croque madame",
+        "croque monsieur",
+        "open sandwich",
+        "toastie"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 650,
+      "usda_queries": [
+        "sandwich"
+      ]
+    },
+    {
+      "id": "burger",
+      "display_name": "Burger",
+      "aliases": [
+        "burger",
+        "hamburger",
+        "cheeseburger",
+        "veggie burger"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 220,
+      "min_weight_g": 90,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "hamburger",
+        "cheeseburger"
+      ]
+    },
+    {
+      "id": "wrap",
+      "display_name": "Wrap",
+      "aliases": [
+        "wrap",
+        "burrito wrap",
+        "tortilla wrap",
+        "chicken wrap"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "wrap sandwich",
+        "tortilla wrap"
+      ]
+    },
+    {
+      "id": "tacos",
+      "display_name": "Tacos",
+      "aliases": [
+        "tacos",
+        "taco",
+        "fish taco",
+        "street tacos"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "tacos",
+        "taco shell beef"
+      ]
+    },
+    {
+      "id": "burrito",
+      "display_name": "Burrito",
+      "aliases": [
+        "burrito",
+        "chicken burrito",
+        "beef burrito"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 350,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "burrito bean beef",
+        "burrito chicken"
+      ]
+    },
+    {
+      "id": "quesadilla",
+      "display_name": "Quesadilla",
+      "aliases": [
+        "quesadilla"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 185,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "quesadilla cheese chicken"
+      ]
+    },
+    {
+      "id": "nachos",
+      "display_name": "Nachos",
+      "aliases": [
+        "nachos",
+        "tortilla chips with toppings"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 170,
+      "min_weight_g": 60,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "nachos with cheese"
+      ]
+    },
+    {
+      "id": "falafel",
+      "display_name": "Falafel",
+      "aliases": [
+        "falafel"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "falafel fried"
+      ]
+    },
+    {
+      "id": "hummus",
+      "display_name": "Hummus",
+      "aliases": [
+        "hummus",
+        "houmous",
+        "hummus dip"
+      ],
+      "category": "condiment_sauce",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 100,
+      "min_weight_g": 20,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "hummus"
+      ]
+    },
+    {
+      "id": "shawarma",
+      "display_name": "Shawarma",
+      "aliases": [
+        "shawarma",
+        "shwarma",
+        "chicken shawarma",
+        "doner kebab"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 300,
+      "min_weight_g": 120,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "shawarma",
+        "chicken wrap gyro"
+      ]
+    },
+    {
+      "id": "kebab",
+      "display_name": "Kebab",
+      "aliases": [
+        "kebab",
+        "shish kebab",
+        "kofta",
+        "souvlaki",
+        "skewer"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 180,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "kebab grilled",
+        "shish kebab lamb"
+      ]
+    },
+    {
+      "id": "french_fries",
+      "display_name": "French Fries",
+      "aliases": [
+        "french fries",
+        "fries",
+        "chips",
+        "steak fries",
+        "wedges",
+        "potato wedges"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 117,
+      "min_weight_g": 40,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "french fries",
+        "potato fried"
+      ]
+    },
+    {
+      "id": "roasted_vegetables",
+      "display_name": "Roasted Vegetables",
+      "aliases": [
+        "roasted vegetables",
+        "roasted veggies",
+        "grilled vegetables",
+        "stir fry vegetables",
+        "mixed vegetables"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "roasted vegetables mixed"
+      ]
+    },
+    {
+      "id": "broccoli",
+      "display_name": "Broccoli",
+      "aliases": [
+        "broccoli",
+        "steamed broccoli"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 91,
+      "min_weight_g": 30,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "broccoli cooked"
+      ]
+    },
+    {
+      "id": "mushroom",
+      "display_name": "Mushroom",
+      "aliases": [
+        "mushroom",
+        "mushrooms",
+        "sauteed mushrooms",
+        "grilled mushrooms"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 70,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "mushrooms cooked",
+        "mushrooms sauteed"
+      ]
+    },
+    {
+      "id": "tomato",
+      "display_name": "Tomato",
+      "aliases": [
+        "tomato",
+        "tomatoes",
+        "grilled tomato",
+        "roasted tomato",
+        "cherry tomato",
+        "halved tomato"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 80,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "tomatoes raw",
+        "tomato cooked",
+        "tomatoes red ripe raw"
+      ]
+    },
+    {
+      "id": "baked_beans",
+      "display_name": "Baked Beans",
+      "aliases": [
+        "baked beans",
+        "beans",
+        "heinz beans",
+        "haricot beans in tomato sauce",
+        "beans on toast"
+      ],
+      "category": "legume",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 200,
+      "min_weight_g": 50,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "baked beans canned",
+        "beans baked canned plain",
+        "navy beans baked"
+      ]
+    },
+    {
+      "id": "hash_brown",
+      "display_name": "Hash Brown",
+      "aliases": [
+        "hash brown",
+        "hash browns",
+        "hashbrown",
+        "hashbrowns",
+        "potato cake",
+        "latke"
+      ],
+      "category": "potato",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 80,
+      "min_weight_g": 30,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "hash browns cooked",
+        "potato patty fried",
+        "potatoes hashed brown"
+      ]
+    },
+    {
+      "id": "avocado_toast",
+      "display_name": "Avocado Toast",
+      "aliases": [
+        "avocado toast",
+        "avocado on toast"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "avocado toast"
+      ]
+    },
+    {
+      "id": "cake",
+      "display_name": "Cake",
+      "aliases": [
+        "cake",
+        "birthday cake",
+        "chocolate cake",
+        "vanilla cake",
+        "carrot cake",
+        "sponge cake",
+        "layer cake",
+        "red velvet cake",
+        "lemon cake",
+        "fruit cake",
+        "strawberry shortcake",
+        "shortcake"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 3500,
+      "usda_queries": [
+        "cake chocolate",
+        "cake vanilla"
+      ]
+    },
+    {
+      "id": "cheesecake",
+      "display_name": "Cheesecake",
+      "aliases": [
+        "cheesecake",
+        "new york cheesecake"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 1.1,
+      "typical_serving_g": 125,
+      "min_weight_g": 50,
+      "max_weight_g": 2500,
+      "usda_queries": [
+        "cheesecake plain"
+      ]
+    },
+    {
+      "id": "ice_cream",
+      "display_name": "Ice Cream",
+      "aliases": [
+        "ice cream",
+        "gelato",
+        "ice cream scoop",
+        "sundae",
+        "frozen yogurt"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 132,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "ice cream vanilla",
+        "ice cream chocolate"
+      ]
+    },
+    {
+      "id": "cookies",
+      "display_name": "Cookies",
+      "aliases": [
+        "cookie",
+        "cookies",
+        "chocolate chip cookies",
+        "biscuit"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 40,
+      "min_weight_g": 10,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "cookies chocolate chip"
+      ]
+    },
+    {
+      "id": "brownie",
+      "display_name": "Brownie",
+      "aliases": [
+        "brownie",
+        "chocolate brownie"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "brownie chocolate"
+      ]
+    },
+    {
+      "id": "tiramisu",
+      "display_name": "Tiramisu",
+      "aliases": [
+        "tiramisu"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "tiramisu"
+      ]
+    },
+    {
+      "id": "pie",
+      "display_name": "Pie",
+      "aliases": [
+        "pie",
+        "apple pie",
+        "pumpkin pie",
+        "pecan pie",
+        "cherry pie"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 125,
+      "min_weight_g": 50,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "apple pie",
+        "pie fruit"
+      ]
+    },
+    {
+      "id": "dessert",
+      "display_name": "Dessert",
+      "aliases": [
+        "dessert",
+        "mousse",
+        "chocolate mousse",
+        "panna cotta",
+        "chia pudding",
+        "pudding",
+        "parfait",
+        "tart",
+        "eclair",
+        "mochi",
+        "egg tart",
+        "jalebi",
+        "gulab jamun",
+        "kheer",
+        "rasgulla",
+        "mithai",
+        "sweet",
+        "rice pudding",
+        "bread pudding",
+        "custard pudding"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 80,
+      "min_weight_g": 20,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "dessert pudding",
+        "chocolate mousse"
+      ]
+    },
+    {
+      "id": "chips",
+      "display_name": "Chips",
+      "aliases": [
+        "potato chips",
+        "crisps",
+        "corn chips",
+        "tortilla chips",
+        "pringles"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.15,
+      "typical_serving_g": 28,
+      "min_weight_g": 10,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "potato chips",
+        "corn chips"
+      ]
+    },
+    {
+      "id": "popcorn",
+      "display_name": "Popcorn",
+      "aliases": [
+        "popcorn",
+        "buttered popcorn"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.08,
+      "typical_serving_g": 28,
+      "min_weight_g": 10,
+      "max_weight_g": 150,
+      "usda_queries": [
+        "popcorn butter"
+      ]
+    },
+    {
+      "id": "nuts",
+      "display_name": "Nuts",
+      "aliases": [
+        "nuts",
+        "mixed nuts",
+        "almonds",
+        "cashews",
+        "peanuts",
+        "walnuts",
+        "pistachios"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 30,
+      "min_weight_g": 10,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "mixed nuts",
+        "almonds roasted"
+      ]
+    },
+    {
+      "id": "smoothie",
+      "display_name": "Smoothie",
+      "aliases": [
+        "smoothie",
+        "fruit smoothie",
+        "green smoothie",
+        "protein shake"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.02,
+      "typical_serving_g": 360,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "smoothie fruit",
+        "protein shake"
+      ]
+    },
+    {
+      "id": "juice",
+      "display_name": "Juice",
+      "aliases": [
+        "juice",
+        "orange juice",
+        "apple juice",
+        "fresh juice",
+        "freshly squeezed juice"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.04,
+      "typical_serving_g": 240,
+      "min_weight_g": 100,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "orange juice",
+        "apple juice"
+      ]
+    },
+    {
+      "id": "milkshake",
+      "display_name": "Milkshake",
+      "aliases": [
+        "milkshake",
+        "milk shake",
+        "chocolate milkshake",
+        "vanilla milkshake"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.06,
+      "typical_serving_g": 300,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "milkshake chocolate",
+        "milkshake vanilla"
+      ]
+    },
+    {
+      "id": "huevos_rancheros",
+      "display_name": "Huevos Rancheros",
+      "aliases": [
+        "huevos rancheros"
+      ],
+      "category": "egg",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 300,
+      "min_weight_g": 120,
+      "max_weight_g": 900,
+      "usda_queries": [
+        "huevos rancheros",
+        "egg breakfast"
+      ]
+    },
+    {
+      "id": "dosa",
+      "display_name": "Dosa",
+      "aliases": [
+        "dosa",
+        "masala dosa",
+        "plain dosa",
+        "crispy dosa",
+        "rava dosa"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.45,
+      "typical_serving_g": 90,
+      "min_weight_g": 40,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "dosa indian crepe",
+        "rice crepe"
+      ]
+    },
+    {
+      "id": "idli",
+      "display_name": "Idli",
+      "aliases": [
+        "idli",
+        "idly",
+        "steamed idli"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 120,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "idli steamed rice cake"
+      ]
+    },
+    {
+      "id": "satay",
+      "display_name": "Satay",
+      "aliases": [
+        "satay",
+        "chicken satay",
+        "beef satay",
+        "pork satay",
+        "skewered meat"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 120,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "chicken satay grilled",
+        "peanut sauce chicken"
+      ]
+    },
+    {
+      "id": "peking_duck",
+      "display_name": "Peking Duck",
+      "aliases": [
+        "peking duck",
+        "roast duck",
+        "duck",
+        "duck meat",
+        "char siu",
+        "bbq pork"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.1,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "roast duck",
+        "peking duck"
+      ]
+    },
+    {
+      "id": "tempura",
+      "display_name": "Tempura",
+      "aliases": [
+        "tempura",
+        "shrimp tempura",
+        "vegetable tempura",
+        "ebi tempura",
+        "fried battered"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 130,
+      "min_weight_g": 50,
+      "max_weight_g": 450,
+      "usda_queries": [
+        "tempura shrimp",
+        "battered fried shrimp"
+      ]
+    },
+    {
+      "id": "takoyaki",
+      "display_name": "Takoyaki",
+      "aliases": [
+        "takoyaki",
+        "octopus balls",
+        "takoyaki balls"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "takoyaki octopus"
+      ]
+    },
+    {
+      "id": "okonomiyaki",
+      "display_name": "Okonomiyaki",
+      "aliases": [
+        "okonomiyaki",
+        "japanese pancake",
+        "japanese savory pancake"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 200,
+      "min_weight_g": 100,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "okonomiyaki japanese pancake"
+      ]
+    },
+    {
+      "id": "onigiri",
+      "display_name": "Onigiri",
+      "aliases": [
+        "onigiri",
+        "rice ball",
+        "japanese rice ball",
+        "omusubi"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 110,
+      "min_weight_g": 60,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "onigiri rice ball",
+        "cooked rice"
+      ]
+    },
+    {
+      "id": "poke_bowl",
+      "display_name": "Poke Bowl",
+      "aliases": [
+        "poke bowl",
+        "poke",
+        "hawaiian poke",
+        "tuna poke",
+        "salmon poke"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.92,
+      "typical_serving_g": 350,
+      "min_weight_g": 200,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "poke bowl tuna",
+        "poke bowl salmon"
+      ]
+    },
+    {
+      "id": "acai_bowl",
+      "display_name": "Acai Bowl",
+      "aliases": [
+        "acai bowl",
+        "acai",
+        "smoothie bowl",
+        "grain bowl",
+        "buddha bowl"
+      ],
+      "category": "fruit",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 250,
+      "min_weight_g": 150,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "acai bowl",
+        "acai berries"
+      ]
+    },
+    {
+      "id": "granola",
+      "display_name": "Granola",
+      "aliases": [
+        "granola",
+        "granola bowl",
+        "muesli",
+        "overnight oats",
+        "oatmeal"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.45,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "granola",
+        "oatmeal cooked"
+      ]
+    },
+    {
+      "id": "gyoza",
+      "display_name": "Gyoza",
+      "aliases": [
+        "gyoza",
+        "potsticker",
+        "potstickers",
+        "pan-fried dumplings",
+        "jiaozi"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "gyoza pan fried",
+        "potstickers"
+      ]
+    },
+    {
+      "id": "spring_roll",
+      "display_name": "Spring Roll",
+      "aliases": [
+        "spring roll",
+        "spring rolls",
+        "fresh spring roll",
+        "fried spring roll",
+        "vietnamese spring roll"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 80,
+      "min_weight_g": 30,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "spring roll fried",
+        "egg roll"
+      ]
+    },
+    {
+      "id": "coffee",
+      "display_name": "Coffee",
+      "aliases": [
+        "coffee",
+        "espresso",
+        "latte",
+        "cappuccino",
+        "americano",
+        "flat white",
+        "macchiato",
+        "cold brew",
+        "iced coffee",
+        "black coffee"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 240,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "coffee brewed",
+        "espresso"
+      ]
+    },
+    {
+      "id": "tea",
+      "display_name": "Tea",
+      "aliases": [
+        "tea",
+        "green tea",
+        "black tea",
+        "herbal tea",
+        "chai",
+        "chai tea",
+        "iced tea",
+        "bubble tea",
+        "boba tea"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 240,
+      "min_weight_g": 60,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "tea brewed",
+        "green tea brewed"
+      ]
+    },
+    {
+      "id": "beer",
+      "display_name": "Beer",
+      "aliases": [
+        "beer",
+        "ale",
+        "lager",
+        "stout",
+        "craft beer",
+        "pint of beer"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.01,
+      "typical_serving_g": 355,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "beer regular",
+        "beer ale"
+      ]
+    },
+    {
+      "id": "soda",
+      "display_name": "Soda",
+      "aliases": [
+        "soda",
+        "cola",
+        "soft drink",
+        "fizzy drink",
+        "sparkling water",
+        "lemonade"
+      ],
+      "category": "drink",
+      "density_g_ml": 1.04,
+      "typical_serving_g": 355,
+      "min_weight_g": 100,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "cola carbonated beverage",
+        "soda regular"
+      ]
+    },
+    {
+      "id": "default_unknown",
+      "display_name": "Unknown Food",
+      "aliases": [
+        "food",
+        "dish",
+        "meal"
+      ],
+      "category": "default_unknown",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 150,
+      "min_weight_g": 20,
+      "max_weight_g": 450,
+      "usda_queries": [
+        "food"
+      ]
+    },
+    {
+      "id": "cereal",
+      "display_name": "Cereal",
+      "aliases": [
+        "cereal",
+        "breakfast cereal",
+        "cornflakes",
+        "granola",
+        "muesli",
+        "oat cereal"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.35,
+      "typical_serving_g": 40,
+      "min_weight_g": 20,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "ready to eat cereal",
+        "breakfast cereal corn flakes"
+      ]
+    },
+    {
+      "id": "yogurt",
+      "display_name": "Yogurt",
+      "aliases": [
+        "yogurt",
+        "yoghurt",
+        "greek yogurt",
+        "plain yogurt",
+        "natural yogurt"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.05,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "yogurt plain whole milk",
+        "greek yogurt plain"
+      ]
+    },
+    {
+      "id": "chicken_nuggets",
+      "display_name": "Chicken Nuggets",
+      "aliases": [
+        "chicken nuggets",
+        "nuggets",
+        "chicken fingers",
+        "chicken tenders",
+        "chicken strips"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "chicken nuggets",
+        "chicken nugget fast food"
+      ]
+    },
+    {
+      "id": "couscous",
+      "display_name": "Couscous",
+      "aliases": [
+        "couscous",
+        "moroccan couscous"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 180,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "couscous cooked"
+      ]
+    },
+    {
+      "id": "green_beans",
+      "display_name": "Green Beans",
+      "aliases": [
+        "green beans",
+        "french beans",
+        "string beans",
+        "runner beans",
+        "haricot verts"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "green beans cooked boiled"
+      ]
+    },
+    {
+      "id": "spinach",
+      "display_name": "Spinach",
+      "aliases": [
+        "spinach",
+        "baby spinach",
+        "wilted spinach",
+        "creamed spinach"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 85,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "spinach cooked boiled"
+      ]
+    },
+    {
+      "id": "aubergine",
+      "display_name": "Aubergine",
+      "aliases": [
+        "aubergine",
+        "eggplant",
+        "baingan",
+        "brinjal",
+        "roasted aubergine",
+        "grilled eggplant"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "eggplant cooked boiled"
+      ]
+    },
+    {
+      "id": "courgette",
+      "display_name": "Courgette",
+      "aliases": [
+        "courgette",
+        "zucchini",
+        "grilled courgette",
+        "sauteed zucchini"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "zucchini cooked boiled"
+      ]
+    },
+    {
+      "id": "onion_rings",
+      "display_name": "Onion Rings",
+      "aliases": [
+        "onion rings",
+        "fried onion rings",
+        "battered onion rings"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.65,
+      "typical_serving_g": 100,
+      "min_weight_g": 40,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "onion rings breaded fried"
+      ]
+    },
+    {
+      "id": "roast_potato",
+      "display_name": "Roast Potato",
+      "aliases": [
+        "roast potato",
+        "roasted potato",
+        "roasties",
+        "roast potatoes"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "potatoes roasted",
+        "potato oven roasted"
+      ]
+    },
+    {
+      "id": "mashed_potato",
+      "display_name": "Mashed Potato",
+      "aliases": [
+        "mashed potato",
+        "mashed potatoes",
+        "mash",
+        "creamed potato"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 180,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "mashed potatoes home prepared whole milk butter"
+      ]
+    },
+    {
+      "id": "baked_potato",
+      "display_name": "Baked Potato",
+      "aliases": [
+        "baked potato",
+        "jacket potato",
+        "stuffed potato",
+        "loaded potato"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 200,
+      "min_weight_g": 100,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "potato baked flesh and skin"
+      ]
+    },
+    {
+      "id": "scone",
+      "display_name": "Scone",
+      "aliases": [
+        "scone",
+        "plain scone",
+        "cream scone",
+        "fruit scone",
+        "biscuit scone"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "scone baked"
+      ]
+    },
+    {
+      "id": "ribs",
+      "display_name": "Ribs",
+      "aliases": [
+        "baby back ribs",
+        "ribs",
+        "pork ribs",
+        "spare ribs",
+        "bbq ribs"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "pork ribs cooked",
+        "baby back ribs"
+      ]
+    },
+    {
+      "id": "bruschetta",
+      "display_name": "Bruschetta",
+      "aliases": [
+        "bruschetta",
+        "tomato bruschetta"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.6,
+      "typical_serving_g": 80,
+      "min_weight_g": 30,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "bruschetta toast tomato"
+      ]
+    },
+    {
+      "id": "cannoli",
+      "display_name": "Cannoli",
+      "aliases": [
+        "cannoli",
+        "cannolo"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.7,
+      "typical_serving_g": 85,
+      "min_weight_g": 30,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "cannoli pastry ricotta"
+      ]
+    },
+    {
+      "id": "ceviche",
+      "display_name": "Ceviche",
+      "aliases": [
+        "ceviche",
+        "seviche",
+        "fish ceviche"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "ceviche fish lime"
+      ]
+    },
+    {
+      "id": "cheese",
+      "display_name": "Cheese",
+      "aliases": [
+        "cheese",
+        "cheese plate",
+        "cheese board",
+        "cheddar",
+        "brie",
+        "gouda",
+        "parmesan",
+        "mozzarella",
+        "feta",
+        "blue cheese",
+        "swiss cheese",
+        "cream cheese"
+      ],
+      "category": "protein",
+      "density_g_ml": 1.1,
+      "typical_serving_g": 40,
+      "min_weight_g": 10,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "cheddar cheese",
+        "cheese natural"
+      ]
+    },
+    {
+      "id": "baklava",
+      "display_name": "Baklava",
+      "aliases": [
+        "baklava",
+        "baklawa"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "baklava pastry nuts"
+      ]
+    },
+    {
+      "id": "churros",
+      "display_name": "Churros",
+      "aliases": [
+        "churros",
+        "churro"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.55,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "churros fried dough"
+      ]
+    },
+    {
+      "id": "crab_cakes",
+      "display_name": "Crab Cakes",
+      "aliases": [
+        "crab cakes",
+        "crab cake",
+        "crab patty"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 90,
+      "min_weight_g": 40,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "crab cake cooked"
+      ]
+    },
+    {
+      "id": "creme_brulee",
+      "display_name": "Creme Brulee",
+      "aliases": [
+        "creme brulee",
+        "creme brule",
+        "burnt cream",
+        "brulee"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 120,
+      "min_weight_g": 60,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "creme brulee custard dessert"
+      ]
+    },
+    {
+      "id": "cupcake",
+      "display_name": "Cupcake",
+      "aliases": [
+        "cup cakes",
+        "cupcake",
+        "cupcakes",
+        "fairy cake",
+        "fairy cakes",
+        "muffin cake"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 55,
+      "min_weight_g": 20,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "cupcake frosted",
+        "cupcake with icing"
+      ]
+    },
+    {
+      "id": "deviled_eggs",
+      "display_name": "Deviled Eggs",
+      "aliases": [
+        "deviled eggs",
+        "devilled eggs",
+        "stuffed eggs"
+      ],
+      "category": "egg",
+      "density_g_ml": 1.0,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "deviled eggs",
+        "egg stuffed mayonnaise"
+      ]
+    },
+    {
+      "id": "edamame",
+      "display_name": "Edamame",
+      "aliases": [
+        "edamame",
+        "soy beans",
+        "soybeans boiled"
+      ],
+      "category": "vegetable",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 150,
+      "min_weight_g": 50,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "edamame cooked",
+        "soybeans immature boiled"
+      ]
+    },
+    {
+      "id": "filet_mignon",
+      "display_name": "Filet Mignon",
+      "aliases": [
+        "filet mignon",
+        "fillet steak",
+        "beef tenderloin",
+        "beef fillet",
+        "beef carpaccio",
+        "beef tartare",
+        "tuna tartare"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 170,
+      "min_weight_g": 80,
+      "max_weight_g": 450,
+      "usda_queries": [
+        "beef tenderloin cooked",
+        "filet mignon"
+      ]
+    },
+    {
+      "id": "fried_calamari",
+      "display_name": "Fried Calamari",
+      "aliases": [
+        "fried calamari",
+        "calamari",
+        "squid rings",
+        "calamari fritti",
+        "escargots"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.7,
+      "typical_serving_g": 120,
+      "min_weight_g": 50,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "squid fried breaded",
+        "calamari fried"
+      ]
+    },
+    {
+      "id": "gnocchi",
+      "display_name": "Gnocchi",
+      "aliases": [
+        "gnocchi",
+        "potato gnocchi",
+        "gnocchi al pesto"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "gnocchi potato cooked"
+      ]
+    },
+    {
+      "id": "guacamole",
+      "display_name": "Guacamole",
+      "aliases": [
+        "guacamole",
+        "guac",
+        "avocado dip"
+      ],
+      "category": "condiment_sauce",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 60,
+      "min_weight_g": 20,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "guacamole avocado dip"
+      ]
+    },
+    {
+      "id": "macaroni_cheese",
+      "display_name": "Macaroni and Cheese",
+      "aliases": [
+        "macaroni and cheese",
+        "mac and cheese",
+        "mac n cheese",
+        "macaroni cheese"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 250,
+      "min_weight_g": 100,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "macaroni and cheese cooked"
+      ]
+    },
+    {
+      "id": "macarons",
+      "display_name": "Macarons",
+      "aliases": [
+        "macarons",
+        "macaron",
+        "french macaron",
+        "macaroon"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.5,
+      "typical_serving_g": 40,
+      "min_weight_g": 10,
+      "max_weight_g": 200,
+      "usda_queries": [
+        "macaron cookie almond"
+      ]
+    },
+    {
+      "id": "mussels",
+      "display_name": "Mussels",
+      "aliases": [
+        "mussels",
+        "steamed mussels",
+        "moules",
+        "blue mussels"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.8,
+      "typical_serving_g": 150,
+      "min_weight_g": 60,
+      "max_weight_g": 400,
+      "usda_queries": [
+        "mussels cooked steamed"
+      ]
+    },
+    {
+      "id": "oysters",
+      "display_name": "Oysters",
+      "aliases": [
+        "oysters",
+        "oyster",
+        "raw oysters",
+        "grilled oysters"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 85,
+      "min_weight_g": 30,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "oysters cooked eastern"
+      ]
+    },
+    {
+      "id": "paella",
+      "display_name": "Paella",
+      "aliases": [
+        "paella",
+        "spanish paella",
+        "seafood paella",
+        "valencian paella"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 300,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "paella rice seafood"
+      ]
+    },
+    {
+      "id": "panna_cotta",
+      "display_name": "Panna Cotta",
+      "aliases": [
+        "panna cotta",
+        "italian pudding",
+        "cooked cream"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 120,
+      "min_weight_g": 60,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "panna cotta cream dessert"
+      ]
+    },
+    {
+      "id": "poutine",
+      "display_name": "Poutine",
+      "aliases": [
+        "poutine",
+        "fries with gravy",
+        "cheese fries"
+      ],
+      "category": "snack",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 300,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "poutine french fries gravy cheese"
+      ]
+    },
+    {
+      "id": "prime_rib",
+      "display_name": "Prime Rib",
+      "aliases": [
+        "prime rib",
+        "beef prime rib",
+        "standing rib roast",
+        "foie gras"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.95,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 600,
+      "usda_queries": [
+        "beef rib roast cooked"
+      ]
+    },
+    {
+      "id": "ravioli",
+      "display_name": "Ravioli",
+      "aliases": [
+        "ravioli",
+        "cheese ravioli",
+        "meat ravioli"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 200,
+      "min_weight_g": 80,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "ravioli cheese filled cooked"
+      ]
+    },
+    {
+      "id": "scallops",
+      "display_name": "Scallops",
+      "aliases": [
+        "scallops",
+        "sea scallops",
+        "pan seared scallops",
+        "seared scallops",
+        "shrimp and grits"
+      ],
+      "category": "protein",
+      "density_g_ml": 0.9,
+      "typical_serving_g": 120,
+      "min_weight_g": 40,
+      "max_weight_g": 350,
+      "usda_queries": [
+        "scallops cooked steamed"
+      ]
+    },
+    {
+      "id": "seaweed_salad",
+      "display_name": "Seaweed Salad",
+      "aliases": [
+        "seaweed salad",
+        "wakame salad",
+        "seaweed"
+      ],
+      "category": "salad",
+      "density_g_ml": 0.7,
+      "typical_serving_g": 100,
+      "min_weight_g": 30,
+      "max_weight_g": 300,
+      "usda_queries": [
+        "seaweed wakame raw"
+      ]
+    },
+    {
+      "id": "spaghetti_bolognese",
+      "display_name": "Spaghetti Bolognese",
+      "aliases": [
+        "spaghetti bolognese",
+        "spaghetti bolognaise",
+        "bolognese pasta",
+        "spaghetti carbonara",
+        "pasta carbonara",
+        "carbonara",
+        "spaghetti with meat sauce"
+      ],
+      "category": "rice_pasta_curry_bowl",
+      "density_g_ml": 0.85,
+      "typical_serving_g": 300,
+      "min_weight_g": 150,
+      "max_weight_g": 700,
+      "usda_queries": [
+        "spaghetti with meat sauce",
+        "pasta bolognese"
+      ]
+    },
+    {
+      "id": "breakfast_burrito",
+      "display_name": "Breakfast Burrito",
+      "aliases": [
+        "breakfast burrito",
+        "egg burrito"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 200,
+      "min_weight_g": 100,
+      "max_weight_g": 500,
+      "usda_queries": [
+        "breakfast burrito egg cheese"
+      ]
+    },
+    {
+      "id": "lobster_roll",
+      "display_name": "Lobster Roll",
+      "aliases": [
+        "lobster roll sandwich",
+        "lobster roll",
+        "lobster sub"
+      ],
+      "category": "sandwich_wrap",
+      "density_g_ml": 0.75,
+      "typical_serving_g": 200,
+      "min_weight_g": 100,
+      "max_weight_g": 450,
+      "usda_queries": [
+        "lobster roll sandwich seafood"
+      ]
+    },
+    {
+      "id": "beignets",
+      "display_name": "Beignets",
+      "aliases": [
+        "beignets",
+        "beignet",
+        "fried dough balls"
+      ],
+      "category": "bread_pastry",
+      "density_g_ml": 0.45,
+      "typical_serving_g": 80,
+      "min_weight_g": 20,
+      "max_weight_g": 250,
+      "usda_queries": [
+        "beignets fried dough"
+      ]
+    }
+  ]
+}
