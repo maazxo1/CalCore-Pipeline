@@ -375,3 +375,5 @@ All settings are in `.env`. Defaults are tuned for an RTX 4060 8 GB.
 Built with YOLOv8 · FastSAM · EfficientNet · CLIP · Depth Anything V2 · USDA FoodData Central
 
 </div>
+#   C a l C o r e - P i p e l i n e  
+ 
