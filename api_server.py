@@ -30,7 +30,7 @@ from PIL import Image, ImageOps
 import main as _pipeline                              # shared models + helpers
 from core.blur_detector import detect_blur
 from core.food_taxonomy import get_taxonomy
-from core.pipeline_postprocess import dedupe_items, filter_failed_items, group_items_across_images, mask_iou
+from core.pipeline_postprocess import dedupe_items, filter_failed_items, group_items_across_images, mask_iou, merge_same_label_items
 from core.volume_estimator import aggregate_multi_image_volumes
 from data.usda_nutrition_lookup import (
     _has_usda_key,
@@ -455,6 +455,19 @@ def _to_api_items(results: List[Dict]) -> List[Dict]:
     return [{k: v for k, v in row.items() if k not in _skip} for row in results]
 
 
+def _build_summary(items: List[Dict]) -> List[Dict]:
+    """One entry per distinct food with cumulative weight, calories, and count."""
+    return [
+        {
+            "food_name":      r.get("food_name", "unknown"),
+            "count":          r.get("item_count", 1),
+            "total_weight_g": round(float(r.get("weight_g", 0.0)), 1),
+            "total_calories": round(float(r.get("nutrition", {}).get("calories", 0.0)), 1),
+        }
+        for r in items
+    ]
+
+
 def _build_pipeline_diagnostics(diag: Dict, final_accepted: int) -> Dict:
     def pct(n: int, total: int) -> float:
         return round(100.0 * n / max(total, 1), 1)
@@ -688,15 +701,17 @@ async def analyze_food(
                 "message":              "No food detected or confidence too low.",
             })
 
-        output_items   = _to_api_items(results)
-        total_weight   = sum(float(r["weight_g"]) for r in results)
-        total_calories = sum(float(r["nutrition"].get("calories", 0.0)) for r in results)
+        merged         = merge_same_label_items(results)
+        output_items   = _to_api_items(merged)
+        total_weight   = sum(float(r["weight_g"]) for r in merged)
+        total_calories = sum(float(r["nutrition"].get("calories", 0.0)) for r in merged)
         return JSONResponse({
             "success":              True,
             "food_items":           output_items,
             "count":                len(output_items),
             "total_weight_g":       round(total_weight, 1),
             "total_calories":       round(total_calories, 1),
+            "summary":              _build_summary(merged),
             "reference_type":       reference_type,
             "reference_size_cm":    reference_size_cm,
             "pipeline_diagnostics": _build_pipeline_diagnostics(diag, len(output_items)),
@@ -776,7 +791,7 @@ async def analyze_food_multi(
                 "message":              "No food detected in any of the provided images.",
             })
 
-        aggregated     = _aggregate_api_results(all_results)
+        aggregated     = merge_same_label_items(_aggregate_api_results(all_results))
         output_items   = _to_api_items(aggregated)
         total_weight   = sum(float(r["weight_g"]) for r in aggregated)
         total_calories = sum(float(r["nutrition"].get("calories", 0.0)) for r in aggregated)
@@ -796,6 +811,7 @@ async def analyze_food_multi(
             "images_invalid":        invalid_count,
             "total_weight_g":        round(total_weight, 1),
             "total_calories":        round(total_calories, 1),
+            "summary":               _build_summary(aggregated),
             "reference_type":        reference_type,
             "reference_size_cm":     reference_size_cm,
             "pipeline_diagnostics":  _build_pipeline_diagnostics(merged_diag, len(output_items)),

@@ -230,3 +230,66 @@ def group_items_across_images(
                 groups.append({"key": key, "images": {image_index}, "items": [item]})
 
     return [g["items"] for g in groups]
+
+
+def merge_same_label_items(items: List[Dict]) -> List[Dict]:
+    """Merge multiple detections of the same food into one cumulative item.
+
+    Useful when tiled YOLO or overlapping detections produce separate entries
+    for what is visually one food (e.g. two pizza boxes for one pizza).
+    Items with the same label key are collapsed: weights and calories are
+    summed, the highest-confidence detection supplies the label/nutrition
+    metadata, and the bbox becomes the union of all member bboxes.
+    Items with an empty label key (unknown) are never merged.
+    """
+    if len(items) <= 1:
+        return items[:]
+
+    groups: Dict[str, List[Dict]] = {}
+    order:  List[str] = []          # preserve first-seen order
+
+    for item in items:
+        key = _label_key(item)
+        if not key:
+            # Unknown items: give each a unique key so they are never merged.
+            key = f"__unknown_{id(item)}"
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(item)
+
+    merged: List[Dict] = []
+    for key in order:
+        group = groups[key]
+        if len(group) == 1:
+            merged.append(group[0])
+            continue
+
+        # Pick the highest-confidence item as the representative.
+        best = max(group, key=lambda x: _safe_float(x.get("confidence", 0.0)))
+        total_weight   = sum(_safe_float(x.get("weight_g", 0.0))               for x in group)
+        total_calories = sum(_safe_float(x.get("nutrition", {}).get("calories", 0.0)) for x in group)
+        count = len(group)
+
+        # Union bounding box.
+        valid_bboxes = [x.get("bbox") for x in group if x.get("bbox") and len(x["bbox"]) == 4]
+        if valid_bboxes:
+            union_bbox = [
+                min(b[0] for b in valid_bboxes),
+                min(b[1] for b in valid_bboxes),
+                max(b[2] for b in valid_bboxes),
+                max(b[3] for b in valid_bboxes),
+            ]
+        else:
+            union_bbox = best.get("bbox", [])
+
+        out = dict(best)
+        out["weight_g"]   = round(total_weight, 1)
+        out["bbox"]       = union_bbox
+        out["item_count"] = count          # how many detections were merged
+        if out.get("nutrition"):
+            out["nutrition"] = dict(out["nutrition"])
+            out["nutrition"]["calories"] = round(total_calories, 1)
+        merged.append(out)
+
+    return merged
