@@ -224,8 +224,8 @@ pipelines/
 ### 1 — Clone
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone --recurse-submodules https://github.com/maazxo1/CalCore-Pipeline.git
+cd CalCore-Pipeline
 ```
 
 ### 2 — Virtual environment

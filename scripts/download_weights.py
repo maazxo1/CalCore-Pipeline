@@ -27,15 +27,15 @@ from pathlib import Path
 # Then paste the asset download links below.
 WEIGHTS = {
     "weights/yolo.pt": (
-        "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0/yolo.pt",
-        84,   # expected size in MB (approximate)
+        "https://github.com/maazxo1/CalCore-Pipeline/releases/download/v1.0/yolo.pt",
+        84,
     ),
     "weights/efficientnet_food101/best.pth": (
-        "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0/efficientnet_best.pth",
+        "https://github.com/maazxo1/CalCore-Pipeline/releases/download/v1.0/efficientnet_best.pth",
         451,
     ),
     "weights/efficientnet_food101/labels.txt": (
-        "https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v1.0/labels.txt",
+        "https://github.com/maazxo1/CalCore-Pipeline/releases/download/v1.0/labels.txt",
         0,
     ),
 }
