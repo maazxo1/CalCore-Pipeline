@@ -18,8 +18,11 @@
   <a href="#-pipeline-architecture">Architecture</a> ·
   <a href="#-model-accuracy">Accuracy</a> ·
   <a href="#-api-usage">API</a> ·
-  <a href="#%EF%B8%8F-configuration">Config</a> ·
-  <a href="SETUP.md">Full Setup Guide</a>
+  <a href="#%EF%B8%8F-configuration">Config</a>
+</p>
+
+<p align="center">
+  <a href="SETUP.md"><img src="https://img.shields.io/badge/📖 Full%20Setup%20Guide-Click%20Here-blue?style=for-the-badge"/></a>
 </p>
 
 ---
