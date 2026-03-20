@@ -1,0 +1,1511 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "total_foods": 131,
+    "regions": [
+      "western",
+      "south_asian"
+    ],
+    "last_updated": "2026-01-18"
+  },
+  "foods": {
+    "apple": {
+      "diameter": 7.5,
+      "height": 7.0,
+      "shape": "spheroid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 182,
+      "region": "western"
+    },
+    "asparagus": {
+      "length": 18.0,
+      "diameter": 1.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.85,
+      "typical_weight_g": 20,
+      "region": "western"
+    },
+    "avocado": {
+      "length": 9.0,
+      "diameter": 6.0,
+      "shape": "ellipsoid",
+      "correction_factor": 0.8,
+      "typical_weight_g": 150,
+      "region": "western"
+    },
+    "bacon": {
+      "length": 20.0,
+      "width": 3.0,
+      "height": 0.3,
+      "shape": "rectangular",
+      "correction_factor": 0.85,
+      "typical_weight_g": 13,
+      "region": "western"
+    },
+    "bagel": {
+      "diameter": 10.0,
+      "height": 3.0,
+      "shape": "torus",
+      "correction_factor": 0.75,
+      "typical_weight_g": 89,
+      "region": "western"
+    },
+    "baguette": {
+      "length": 55.0,
+      "diameter": 5.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.5,
+      "typical_weight_g": 250,
+      "region": "western"
+    },
+    "banana": {
+      "length": 18.0,
+      "diameter": 3.5,
+      "shape": "cylindrical",
+      "correction_factor": 0.88,
+      "typical_weight_g": 118,
+      "region": "western"
+    },
+    "bell pepper": {
+      "diameter": 8.0,
+      "height": 9.0,
+      "shape": "irregular",
+      "correction_factor": 0.7,
+      "typical_weight_g": 119,
+      "region": "western"
+    },
+    "blackberry": {
+      "diameter": 14.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.70,
+      "typical_weight_g": 144,
+      "region": "western"
+    },
+    "blueberry": {
+      "diameter": 12.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.70,
+      "typical_weight_g": 148,
+      "region": "western"
+    },
+    "bread": {
+      "length": 11.0,
+      "width": 11.0,
+      "height": 1.2,
+      "shape": "rectangular",
+      "correction_factor": 0.4,
+      "typical_weight_g": 29,
+      "region": "western"
+    },
+    "broccoli": {
+      "diameter": 10.0,
+      "height": 7.0,
+      "shape": "irregular",
+      "correction_factor": 0.6,
+      "typical_weight_g": 91,
+      "region": "western"
+    },
+    "brownie": {
+      "length": 6.0,
+      "width": 6.0,
+      "height": 2.5,
+      "shape": "rectangular",
+      "correction_factor": 0.9,
+      "typical_weight_g": 56,
+      "region": "western"
+    },
+    "burger": {
+      "diameter": 11.0,
+      "height": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.55,
+      "typical_weight_g": 110,
+      "region": "western"
+    },
+    "burrito": {
+      "length": 20.0,
+      "diameter": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.75,
+      "typical_weight_g": 220,
+      "region": "western"
+    },
+    "cabbage": {
+      "diameter": 18.0,
+      "height": 16.0,
+      "shape": "spheroid",
+      "correction_factor": 0.75,
+      "typical_weight_g": 908,
+      "region": "western"
+    },
+    "cake": {
+      "length": 8.0,
+      "width": 8.0,
+      "height": 8.0,
+      "shape": "rectangular",
+      "correction_factor": 0.65,
+      "typical_weight_g": 80,
+      "region": "western"
+    },
+    "cake slice": {
+      "length": 10.0,
+      "width": 8.0,
+      "height": 7.0,
+      "shape": "triangular",
+      "correction_factor": 0.7,
+      "typical_weight_g": 80,
+      "region": "western"
+    },
+    "cantaloupe": {
+      "diameter": 15.0,
+      "height": 14.0,
+      "shape": "spheroid",
+      "correction_factor": 0.85,
+      "typical_weight_g": 552,
+      "region": "western"
+    },
+    "carrot": {
+      "length": 15.0,
+      "diameter": 2.5,
+      "shape": "cylindrical",
+      "correction_factor": 0.9,
+      "typical_weight_g": 61,
+      "region": "western"
+    },
+    "cauliflower": {
+      "diameter": 15.0,
+      "height": 12.0,
+      "shape": "irregular",
+      "correction_factor": 0.6,
+      "typical_weight_g": 575,
+      "region": "western"
+    },
+    "chicken breast": {
+      "length": 13.0,
+      "width": 9.0,
+      "height": 2.5,
+      "shape": "rectangular",
+      "correction_factor": 0.92,
+      "typical_weight_g": 170,
+      "region": "western"
+    },
+    "chicken nugget": {
+      "length": 4.0,
+      "width": 3.0,
+      "height": 2.0,
+      "shape": "rectangular",
+      "correction_factor": 0.8,
+      "typical_weight_g": 16,
+      "region": "western"
+    },
+    "chicken tender": {
+      "length": 10.0,
+      "width": 3.0,
+      "height": 2.0,
+      "shape": "rectangular",
+      "correction_factor": 0.8,
+      "typical_weight_g": 60,
+      "region": "western"
+    },
+    "chicken thigh": {
+      "length": 10.0,
+      "width": 7.0,
+      "height": 3.0,
+      "shape": "rectangular",
+      "correction_factor": 0.88,
+      "typical_weight_g": 130,
+      "region": "western"
+    },
+    "chicken wing": {
+      "length": 9.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.7,
+      "typical_weight_g": 50,
+      "region": "western"
+    },
+    "chocolate bar": {
+      "length": 12.0,
+      "width": 6.0,
+      "height": 0.8,
+      "shape": "rectangular",
+      "correction_factor": 0.95,
+      "typical_weight_g": 43,
+      "region": "western"
+    },
+    "cinnamon roll": {
+      "diameter": 10.0,
+      "height": 4.0,
+      "shape": "twisted",
+      "correction_factor": 0.6,
+      "typical_weight_g": 85,
+      "region": "western"
+    },
+    "cookie": {
+      "diameter": 8.0,
+      "height": 1.0,
+      "shape": "disk",
+      "correction_factor": 0.8,
+      "typical_weight_g": 38,
+      "region": "western"
+    },
+    "corn": {
+      "length": 17.0,
+      "diameter": 4.5,
+      "shape": "cylindrical",
+      "correction_factor": 0.75,
+      "typical_weight_g": 90,
+      "region": "western"
+    },
+    "croissant": {
+      "length": 12.0,
+      "width": 8.0,
+      "height": 5.0,
+      "shape": "irregular",
+      "correction_factor": 0.45,
+      "typical_weight_g": 57,
+      "region": "western"
+    },
+    "cucumber": {
+      "length": 20.0,
+      "diameter": 4.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.9,
+      "typical_weight_g": 301,
+      "region": "western"
+    },
+    "cupcake": {
+      "diameter": 6.0,
+      "height": 5.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.55,
+      "typical_weight_g": 50,
+      "region": "western"
+    },
+    "donut": {
+      "diameter": 8.5,
+      "height": 3.0,
+      "shape": "torus",
+      "correction_factor": 0.45,
+      "typical_weight_g": 52,
+      "region": "western"
+    },
+    "dumpling": {
+      "diameter": 5.0,
+      "height": 3.0,
+      "shape": "spheroid",
+      "correction_factor": 0.8,
+      "typical_weight_g": 40,
+      "region": "western"
+    },
+    "egg": {
+      "diameter": 4.5,
+      "height": 5.5,
+      "shape": "ellipsoid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 50,
+      "region": "western"
+    },
+    "eggplant": {
+      "length": 20.0,
+      "diameter": 10.0,
+      "shape": "ellipsoid",
+      "correction_factor": 0.88,
+      "typical_weight_g": 458,
+      "region": "western"
+    },
+    "fish fillet": {
+      "length": 15.0,
+      "width": 6.0,
+      "height": 2.0,
+      "shape": "rectangular",
+      "correction_factor": 0.92,
+      "typical_weight_g": 140,
+      "region": "western"
+    },
+    "french fries": {
+      "length": 10.0,
+      "width": 10.0,
+      "height": 4.0,
+      "shape": "pile",
+      "correction_factor": 0.35,
+      "typical_weight_g": 117,
+      "region": "western"
+    },
+    "grape": {
+      "diameter": 1.8,
+      "height": 2.2,
+      "shape": "spheroid",
+      "correction_factor": 0.95,
+      "typical_weight_g": 5,
+      "region": "western"
+    },
+    "grapefruit": {
+      "diameter": 11.0,
+      "height": 10.0,
+      "shape": "spheroid",
+      "correction_factor": 0.88,
+      "typical_weight_g": 328,
+      "region": "western"
+    },
+    "hot dog": {
+      "length": 16.0,
+      "diameter": 4.5,
+      "shape": "cylindrical",
+      "correction_factor": 0.7,
+      "typical_weight_g": 85,
+      "region": "western"
+    },
+    "ice cream scoop": {
+      "diameter": 5.5,
+      "height": 5.0,
+      "shape": "spheroid",
+      "correction_factor": 0.85,
+      "typical_weight_g": 66,
+      "region": "western"
+    },
+    "kiwi": {
+      "length": 6.0,
+      "diameter": 4.5,
+      "shape": "ellipsoid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 69,
+      "region": "western"
+    },
+    "lamb chop": {
+      "diameter": 9.0,
+      "height": 2.5,
+      "shape": "disk",
+      "correction_factor": 0.88,
+      "typical_weight_g": 160,
+      "region": "western"
+    },
+    "lemon": {
+      "diameter": 5.5,
+      "height": 6.0,
+      "shape": "ellipsoid",
+      "correction_factor": 0.9,
+      "typical_weight_g": 58,
+      "region": "western"
+    },
+    "lettuce": {
+      "diameter": 15.0,
+      "height": 12.0,
+      "shape": "spheroid",
+      "correction_factor": 0.5,
+      "typical_weight_g": 539,
+      "region": "western"
+    },
+    "lime": {
+      "diameter": 5.0,
+      "height": 5.5,
+      "shape": "spheroid",
+      "correction_factor": 0.9,
+      "typical_weight_g": 67,
+      "region": "western"
+    },
+    "mango": {
+      "length": 10.0,
+      "diameter": 7.0,
+      "shape": "ellipsoid",
+      "correction_factor": 0.85,
+      "typical_weight_g": 200,
+      "region": "western"
+    },
+    "meatball": {
+      "diameter": 4.0,
+      "height": 4.0,
+      "shape": "spheroid",
+      "correction_factor": 0.95,
+      "typical_weight_g": 42,
+      "region": "western"
+    },
+    "muffin": {
+      "diameter": 7.0,
+      "height": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.6,
+      "typical_weight_g": 113,
+      "region": "western"
+    },
+    "nachos": {
+      "diameter": 20.0,
+      "height": 3.0,
+      "shape": "pile",
+      "correction_factor": 0.4,
+      "typical_weight_g": 113,
+      "region": "western"
+    },
+    "onion": {
+      "diameter": 8.0,
+      "height": 7.5,
+      "shape": "spheroid",
+      "correction_factor": 0.88,
+      "typical_weight_g": 110,
+      "region": "western"
+    },
+    "onion ring": {
+      "diameter": 7.0,
+      "height": 1.5,
+      "shape": "torus",
+      "correction_factor": 0.5,
+      "typical_weight_g": 12,
+      "region": "western"
+    },
+    "orange": {
+      "diameter": 7.0,
+      "height": 6.8,
+      "shape": "spheroid",
+      "correction_factor": 0.9,
+      "typical_weight_g": 131,
+      "region": "western"
+    },
+    "pancake": {
+      "diameter": 15.0,
+      "height": 1.0,
+      "shape": "disk",
+      "correction_factor": 0.85,
+      "typical_weight_g": 77,
+      "region": "western"
+    },
+    "pasta": {
+      "diameter": 12.0,
+      "height": 3.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 140,
+      "region": "western"
+    },
+    "peach": {
+      "diameter": 7.0,
+      "height": 6.5,
+      "shape": "spheroid",
+      "correction_factor": 0.88,
+      "typical_weight_g": 150,
+      "region": "western"
+    },
+    "pear": {
+      "diameter": 7.0,
+      "height": 9.0,
+      "shape": "spheroid",
+      "correction_factor": 0.9,
+      "typical_weight_g": 178,
+      "region": "western"
+    },
+    "pie slice": {
+      "length": 12.0,
+      "width": 8.0,
+      "height": 4.0,
+      "shape": "triangular",
+      "correction_factor": 0.75,
+      "typical_weight_g": 125,
+      "region": "western"
+    },
+    "pineapple": {
+      "diameter": 12.0,
+      "height": 25.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.7,
+      "typical_weight_g": 900,
+      "region": "western"
+    },
+    "pizza": {
+      "diameter": 35.0,
+      "height": 1.5,
+      "shape": "disk",
+      "correction_factor": 0.65,
+      "typical_weight_g": 860,
+      "region": "western"
+    },
+    "pizza slice": {
+      "length": 17.0,
+      "width": 11.0,
+      "height": 1.5,
+      "shape": "triangular",
+      "correction_factor": 0.65,
+      "typical_weight_g": 107,
+      "region": "western"
+    },
+    "plum": {
+      "diameter": 5.5,
+      "height": 5.0,
+      "shape": "spheroid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 66,
+      "region": "western"
+    },
+    "pork chop": {
+      "diameter": 11.0,
+      "height": 2.0,
+      "shape": "disk",
+      "correction_factor": 0.9,
+      "typical_weight_g": 180,
+      "region": "western"
+    },
+    "potato": {
+      "length": 10.0,
+      "diameter": 6.0,
+      "shape": "ellipsoid",
+      "correction_factor": 0.95,
+      "typical_weight_g": 173,
+      "region": "western"
+    },
+    "quesadilla": {
+      "diameter": 20.0,
+      "height": 1.5,
+      "shape": "disk",
+      "correction_factor": 0.7,
+      "typical_weight_g": 180,
+      "region": "western"
+    },
+    "raspberry": {
+      "diameter": 1.5,
+      "height": 1.8,
+      "shape": "conical",
+      "correction_factor": 0.65,
+      "typical_weight_g": 1.0,
+      "region": "western"
+    },
+    "rice": {
+      "diameter": 11.0,
+      "height": 3.5,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 158,
+      "region": "western"
+    },
+    "salad": {
+      "diameter": 15.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.4,
+      "typical_weight_g": 100,
+      "region": "western"
+    },
+    "salmon": {
+      "length": 12.0,
+      "width": 7.0,
+      "height": 2.0,
+      "shape": "rectangular",
+      "correction_factor": 0.95,
+      "typical_weight_g": 150,
+      "region": "western"
+    },
+    "sandwich": {
+      "length": 15.0,
+      "width": 10.0,
+      "height": 5.0,
+      "shape": "rectangular",
+      "correction_factor": 0.6,
+      "typical_weight_g": 150,
+      "region": "western"
+    },
+    "sausage": {
+      "length": 10.0,
+      "diameter": 2.5,
+      "shape": "cylindrical",
+      "correction_factor": 0.92,
+      "typical_weight_g": 65,
+      "region": "western"
+    },
+    "shrimp": {
+      "length": 8.0,
+      "diameter": 2.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.75,
+      "typical_weight_g": 12,
+      "region": "western"
+    },
+    "soup": {
+      "diameter": 12.0,
+      "height": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.98,
+      "typical_weight_g": 240,
+      "region": "western"
+    },
+    "spinach": {
+      "diameter": 12.0,
+      "height": 3.0,
+      "shape": "pile",
+      "correction_factor": 0.35,
+      "typical_weight_g": 30,
+      "region": "western"
+    },
+    "spring roll": {
+      "length": 10.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.75,
+      "typical_weight_g": 60,
+      "region": "western"
+    },
+    "steak": {
+      "diameter": 13.0,
+      "height": 2.5,
+      "shape": "disk",
+      "correction_factor": 0.95,
+      "typical_weight_g": 225,
+      "region": "western"
+    },
+    "strawberry": {
+      "diameter": 3.0,
+      "height": 4.0,
+      "shape": "conical",
+      "correction_factor": 0.85,
+      "typical_weight_g": 12,
+      "region": "western"
+    },
+    "sub sandwich": {
+      "length": 30.0,
+      "diameter": 7.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.55,
+      "typical_weight_g": 350,
+      "region": "western"
+    },
+    "sushi roll": {
+      "length": 4.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.9,
+      "typical_weight_g": 30,
+      "region": "western"
+    },
+    "taco": {
+      "diameter": 10.0,
+      "height": 5.0,
+      "shape": "folded",
+      "correction_factor": 0.55,
+      "typical_weight_g": 70,
+      "region": "western"
+    },
+    "tomato": {
+      "diameter": 7.0,
+      "height": 6.0,
+      "shape": "spheroid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 123,
+      "region": "western"
+    },
+    "tortilla": {
+      "diameter": 20.0,
+      "height": 0.3,
+      "shape": "disk",
+      "correction_factor": 0.9,
+      "typical_weight_g": 45,
+      "region": "western"
+    },
+    "tuna": {
+      "diameter": 10.0,
+      "height": 3.0,
+      "shape": "disk",
+      "correction_factor": 0.95,
+      "typical_weight_g": 145,
+      "region": "western"
+    },
+    "turkey breast": {
+      "length": 15.0,
+      "width": 10.0,
+      "height": 3.0,
+      "shape": "rectangular",
+      "correction_factor": 0.92,
+      "typical_weight_g": 200,
+      "region": "western"
+    },
+    "waffle": {
+      "diameter": 18.0,
+      "height": 1.5,
+      "shape": "disk",
+      "correction_factor": 0.55,
+      "typical_weight_g": 75,
+      "region": "western"
+    },
+    "watermelon": {
+      "diameter": 25.0,
+      "height": 20.0,
+      "shape": "spheroid",
+      "correction_factor": 0.88,
+      "typical_weight_g": 4500,
+      "region": "western"
+    },
+    "wrap": {
+      "length": 18.0,
+      "diameter": 5.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.65,
+      "typical_weight_g": 180,
+      "region": "western"
+    },
+    "zucchini": {
+      "length": 18.0,
+      "diameter": 5.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.92,
+      "typical_weight_g": 196,
+      "region": "western"
+    },
+    "biryani": {
+      "diameter": 20.0,
+      "height": 8.0,
+      "shape": "mound",
+      "correction_factor": 0.88,
+      "typical_weight_g": 350,
+      "region": "south_asian",
+      "category": "main_dish",
+      "notes": "Rice-based dish, typical serving"
+    },
+    "roti": {
+      "diameter": 18.0,
+      "height": 0.4,
+      "shape": "disk",
+      "correction_factor": 0.85,
+      "typical_weight_g": 40,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Whole wheat flatbread"
+    },
+    "chapati": {
+      "diameter": 16.0,
+      "height": 0.3,
+      "shape": "disk",
+      "correction_factor": 0.85,
+      "typical_weight_g": 35,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Thin flatbread"
+    },
+    "naan": {
+      "length": 25.0,
+      "width": 12.0,
+      "height": 1.5,
+      "shape": "rectangular",
+      "correction_factor": 0.75,
+      "typical_weight_g": 90,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Leavened flatbread"
+    },
+    "paratha": {
+      "diameter": 18.0,
+      "height": 0.8,
+      "shape": "disk",
+      "correction_factor": 0.8,
+      "typical_weight_g": 60,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Layered flatbread with oil/ghee"
+    },
+    "daal": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.95,
+      "typical_weight_g": 200,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Lentil curry, 1 bowl"
+    },
+    "daal_chawal": {
+      "length": 25.0,
+      "width": 20.0,
+      "height": 5.0,
+      "shape": "pile",
+      "correction_factor": 0.9,
+      "typical_weight_g": 400,
+      "region": "south_asian",
+      "category": "main_dish",
+      "notes": "Daal with rice, full plate"
+    },
+    "chicken_curry": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 280,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Chicken curry, 1 serving"
+    },
+    "mutton_curry": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 300,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Mutton curry, 1 serving"
+    },
+    "palak_paneer": {
+      "diameter": 15.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.88,
+      "typical_weight_g": 250,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Spinach and cottage cheese curry"
+    },
+    "paneer_tikka": {
+      "length": 12.0,
+      "width": 8.0,
+      "height": 3.0,
+      "shape": "rectangular",
+      "correction_factor": 0.9,
+      "typical_weight_g": 180,
+      "region": "south_asian",
+      "category": "appetizer",
+      "notes": "Grilled cottage cheese cubes"
+    },
+    "samosa": {
+      "length": 8.0,
+      "width": 6.0,
+      "height": 4.0,
+      "shape": "triangular",
+      "correction_factor": 0.65,
+      "typical_weight_g": 50,
+      "region": "south_asian",
+      "category": "snack",
+      "notes": "Fried pastry with filling"
+    },
+    "pakora": {
+      "diameter": 4.0,
+      "height": 2.0,
+      "shape": "irregular",
+      "correction_factor": 0.55,
+      "typical_weight_g": 25,
+      "region": "south_asian",
+      "category": "snack",
+      "notes": "Fried fritter, single piece"
+    },
+    "kebab": {
+      "length": 10.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.9,
+      "typical_weight_g": 70,
+      "region": "south_asian",
+      "category": "meat",
+      "notes": "Seekh kebab, single piece"
+    },
+    "nihari": {
+      "diameter": 15.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 350,
+      "region": "south_asian",
+      "category": "main_dish",
+      "notes": "Slow-cooked meat stew"
+    },
+    "haleem": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 320,
+      "region": "south_asian",
+      "category": "main_dish",
+      "notes": "Thick meat and lentil stew"
+    },
+    "pulao": {
+      "diameter": 18.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.9,
+      "typical_weight_g": 300,
+      "region": "south_asian",
+      "category": "rice_dish",
+      "notes": "Spiced rice with meat/vegetables"
+    },
+    "raita": {
+      "diameter": 10.0,
+      "height": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.98,
+      "typical_weight_g": 150,
+      "region": "south_asian",
+      "category": "side_dish",
+      "notes": "Yogurt-based side dish"
+    },
+    "kheer": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.95,
+      "typical_weight_g": 180,
+      "region": "south_asian",
+      "category": "dessert",
+      "notes": "Rice pudding"
+    },
+    "gulab_jamun": {
+      "diameter": 4.0,
+      "height": 4.5,
+      "shape": "spheroid",
+      "correction_factor": 0.92,
+      "typical_weight_g": 35,
+      "region": "south_asian",
+      "category": "dessert",
+      "notes": "Sweet fried dough ball, 1 piece"
+    },
+    "jalebi": {
+      "diameter": 8.0,
+      "height": 1.0,
+      "shape": "twisted",
+      "correction_factor": 0.45,
+      "typical_weight_g": 30,
+      "region": "south_asian",
+      "category": "dessert",
+      "notes": "Sweet pretzel-shaped dessert, 1 piece"
+    },
+    "barfi": {
+      "length": 5.0,
+      "width": 5.0,
+      "height": 1.5,
+      "shape": "rectangular",
+      "correction_factor": 0.95,
+      "typical_weight_g": 40,
+      "region": "south_asian",
+      "category": "dessert",
+      "notes": "Milk-based sweet, 1 piece"
+    },
+    "ladoo": {
+      "diameter": 4.5,
+      "height": 4.5,
+      "shape": "spheroid",
+      "correction_factor": 0.9,
+      "typical_weight_g": 40,
+      "region": "south_asian",
+      "category": "dessert",
+      "notes": "Sweet ball, 1 piece"
+    },
+    "lassi": {
+      "diameter": 8.0,
+      "height": 12.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.98,
+      "typical_weight_g": 250,
+      "region": "south_asian",
+      "category": "beverage",
+      "notes": "Yogurt-based drink, 1 glass"
+    },
+    "chai": {
+      "diameter": 7.0,
+      "height": 8.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.98,
+      "typical_weight_g": 200,
+      "region": "south_asian",
+      "category": "beverage",
+      "notes": "Tea, 1 cup"
+    },
+    "aloo_gobi": {
+      "diameter": 15.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.85,
+      "typical_weight_g": 220,
+      "region": "south_asian",
+      "category": "vegetable_dish",
+      "notes": "Potato and cauliflower curry"
+    },
+    "bhindi": {
+      "diameter": 15.0,
+      "height": 3.0,
+      "shape": "pile",
+      "correction_factor": 0.7,
+      "typical_weight_g": 180,
+      "region": "south_asian",
+      "category": "vegetable_dish",
+      "notes": "Okra curry"
+    },
+    "chana_masala": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 220,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Chickpea curry"
+    },
+    "rajma": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 210,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Kidney bean curry"
+    },
+    "karahi": {
+      "diameter": 20.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.9,
+      "typical_weight_g": 380,
+      "region": "south_asian",
+      "category": "main_dish",
+      "notes": "Wok-cooked meat curry"
+    },
+    "korma": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 290,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Creamy curry"
+    },
+    "tandoori_chicken": {
+      "length": 15.0,
+      "width": 10.0,
+      "height": 5.0,
+      "shape": "irregular",
+      "correction_factor": 0.85,
+      "typical_weight_g": 220,
+      "region": "south_asian",
+      "category": "meat",
+      "notes": "Grilled chicken, 1 piece"
+    },
+    "butter_chicken": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 300,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Creamy tomato-based chicken curry"
+    },
+    "tikka_masala": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 290,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Spiced curry with chunks"
+    },
+    "dal_makhani": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.95,
+      "typical_weight_g": 220,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Creamy black lentil curry"
+    },
+    "chole": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 200,
+      "region": "south_asian",
+      "category": "curry",
+      "notes": "Spiced chickpeas"
+    },
+    "puri": {
+      "diameter": 12.0,
+      "height": 3.0,
+      "shape": "spheroid",
+      "correction_factor": 0.35,
+      "typical_weight_g": 20,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Fried puffed bread, 1 piece"
+    },
+    "bhatura": {
+      "diameter": 15.0,
+      "height": 4.0,
+      "shape": "spheroid",
+      "correction_factor": 0.4,
+      "typical_weight_g": 50,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Large fried puffed bread"
+    },
+    "dosa": {
+      "diameter": 25.0,
+      "height": 0.3,
+      "shape": "disk",
+      "correction_factor": 0.85,
+      "typical_weight_g": 120,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Fermented crepe"
+    },
+    "idli": {
+      "diameter": 7.0,
+      "height": 2.0,
+      "shape": "disk",
+      "correction_factor": 0.8,
+      "typical_weight_g": 35,
+      "region": "south_asian",
+      "category": "bread",
+      "notes": "Steamed rice cake, 1 piece"
+    },
+    "vada": {
+      "diameter": 6.0,
+      "height": 2.0,
+      "shape": "torus",
+      "correction_factor": 0.6,
+      "typical_weight_g": 40,
+      "region": "south_asian",
+      "category": "snack",
+      "notes": "Fried lentil donut"
+    },
+    "lasagna": {
+      "length": 15.0,
+      "width": 12.0,
+      "height": 4.0,
+      "shape": "rectangular",
+      "correction_factor": 0.95,
+      "typical_weight_g": 280,
+      "region": "western",
+      "category": "pasta_dish"
+    },
+    
+    "pad_thai": {
+      "diameter": 20.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.88,
+      "typical_weight_g": 320,
+      "region": "asian",
+      "category": "noodle_dish"
+    },
+    
+    "ramen": {
+      "diameter": 18.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.90,
+      "typical_weight_g": 350,
+      "region": "asian",
+      "category": "noodle_soup"
+    },
+    
+    "chow_mein": {
+      "diameter": 18.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.85,
+      "typical_weight_g": 300,
+      "region": "asian",
+      "category": "noodle_dish"
+    },
+    
+    "moussaka": {
+      "length": 15.0,
+      "width": 12.0,
+      "height": 4.5,
+      "shape": "rectangular",
+      "correction_factor": 0.92,
+      "typical_weight_g": 260,
+      "region": "middle_eastern",
+      "category": "casserole"
+    },
+    
+    "spaghetti": {
+      "diameter": 15.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.90,
+      "typical_weight_g": 200,
+      "region": "western",
+      "category": "pasta_dish"
+    },
+    
+    "pho": {
+      "diameter": 20.0,
+      "height": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.95,
+      "typical_weight_g": 450,
+      "region": "asian",
+      "category": "noodle_soup"
+    },
+    
+    "falafel": {
+      "diameter": 5.0,
+      "height": 5.0,
+      "shape": "spheroid",
+      "correction_factor": 0.65,
+      "typical_weight_g": 50,
+      "region": "middle_eastern",
+      "category": "appetizer"
+    },
+    
+    "hummus": {
+      "diameter": 12.0,
+      "height": 3.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 180,
+      "region": "middle_eastern",
+      "category": "dip"
+    },
+    
+    "shawarma": {
+      "length": 20.0,
+      "diameter": 6.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.80,
+      "typical_weight_g": 250,
+      "region": "middle_eastern",
+      "category": "wrap"
+    },
+    
+    "fried_rice": {
+      "diameter": 18.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.93,
+      "typical_weight_g": 280,
+      "region": "asian",
+      "category": "rice_dish"
+    },
+    
+    "lo_mein": {
+      "diameter": 18.0,
+      "height": 4.5,
+      "shape": "mound",
+      "correction_factor": 0.85,
+      "typical_weight_g": 290,
+      "region": "asian",
+      "category": "noodle_dish"
+    },
+    
+    "sushi_roll": {
+      "length": 15.0,
+      "width": 3.0,
+      "height": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.90,
+      "typical_weight_g": 180,
+      "region": "asian",
+      "category": "sushi"
+    },
+    
+    "poke_bowl": {
+      "diameter": 15.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.88,
+      "typical_weight_g": 350,
+      "region": "asian",
+      "category": "bowl"
+    },
+    
+    "burrito_bowl": {
+      "diameter": 16.0,
+      "height": 6.0,
+      "shape": "mound",
+      "correction_factor": 0.90,
+      "typical_weight_g": 380,
+      "region": "western",
+      "category": "bowl"
+    },
+    
+    "caesar_salad": {
+      "diameter": 20.0,
+      "height": 8.0,
+      "shape": "pile",
+      "correction_factor": 0.45,
+      "typical_weight_g": 250,
+      "region": "western",
+      "category": "salad"
+    },
+    
+    "greek_salad": {
+      "diameter": 18.0,
+      "height": 6.0,
+      "shape": "pile",
+      "correction_factor": 0.50,
+      "typical_weight_g": 220,
+      "region": "middle_eastern",
+      "category": "salad"
+    },
+    
+    "mac_and_cheese": {
+      "diameter": 15.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 250,
+      "region": "western",
+      "category": "pasta_dish"
+    },
+    
+    "fish_and_chips": {
+      "length": 20.0,
+      "width": 15.0,
+      "height": 4.0,
+      "shape": "rectangular",
+      "correction_factor": 0.70,
+      "typical_weight_g": 350,
+      "region": "western",
+      "category": "fried"
+    },
+    
+    "tacos": {
+      "length": 12.0,
+      "width": 8.0,
+      "height": 5.0,
+      "shape": "folded",
+      "correction_factor": 0.60,
+      "typical_weight_g": 140,
+      "region": "western",
+      "category": "mexican"
+    },
+    "achar": {
+      "diameter": 8.0,
+      "height": 2.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 50,
+      "region": "south_asian",
+      "category": "condiment"
+    },
+    
+    "paya": {
+      "diameter": 12.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 300,
+      "region": "south_asian",
+      "category": "curry"
+    },
+    
+    "seekh_kebab": {
+      "length": 15.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.92,
+      "typical_weight_g": 100,
+      "region": "south_asian",
+      "category": "meat"
+    },
+    
+    "shami_kebab": {
+      "diameter": 8.0,
+      "height": 2.0,
+      "shape": "disk",
+      "correction_factor": 0.95,
+      "typical_weight_g": 80,
+      "region": "south_asian",
+      "category": "meat"
+    },
+    
+    "chapli_kebab": {
+      "diameter": 10.0,
+      "height": 1.5,
+      "shape": "disk",
+      "correction_factor": 0.90,
+      "typical_weight_g": 120,
+      "region": "south_asian",
+      "category": "meat"
+    },
+    
+    "bihari_kebab": {
+      "length": 10.0,
+      "width": 4.0,
+      "height": 1.0,
+      "shape": "rectangular",
+      "correction_factor": 0.92,
+      "typical_weight_g": 80,
+      "region": "south_asian",
+      "category": "meat"
+    },
+    
+    "keema": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.95,
+      "typical_weight_g": 200,
+      "region": "south_asian",
+      "category": "curry"
+    },
+    
+    "aloo_keema": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 220,
+      "region": "south_asian",
+      "category": "curry"
+    },
+    
+    "saag_gosht": {
+      "diameter": 12.0,
+      "height": 5.0,
+      "shape": "mound",
+      "correction_factor": 0.90,
+      "typical_weight_g": 280,
+      "region": "south_asian",
+      "category": "curry"
+    },
+    
+    "chicken_biryani": {
+      "diameter": 20.0,
+      "height": 8.0,
+      "shape": "mound",
+      "correction_factor": 0.90,
+      "typical_weight_g": 400,
+      "region": "south_asian",
+      "category": "rice_dish"
+    },
+    
+    "zarda": {
+      "diameter": 12.0,
+      "height": 4.0,
+      "shape": "mound",
+      "correction_factor": 0.92,
+      "typical_weight_g": 180,
+      "region": "south_asian",
+      "category": "dessert"
+    },
+    
+    "sheer_khurma": {
+      "diameter": 10.0,
+      "height": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.95,
+      "typical_weight_g": 150,
+      "region": "south_asian",
+      "category": "dessert"
+    },
+    
+    "ras_malai": {
+      "diameter": 6.0,
+      "height": 2.0,
+      "shape": "disk",
+      "correction_factor": 0.92,
+      "typical_weight_g": 60,
+      "region": "south_asian",
+      "category": "dessert"
+    },
+    
+    "kulfi": {
+      "length": 8.0,
+      "diameter": 3.0,
+      "shape": "cylindrical",
+      "correction_factor": 0.90,
+      "typical_weight_g": 70,
+      "region": "south_asian",
+      "category": "dessert"
+    }
+  }
+}

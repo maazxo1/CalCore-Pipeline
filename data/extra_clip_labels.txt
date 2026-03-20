@@ -1,0 +1,220 @@
+# Extra CLIP labels beyond Food-101 for regional and trending foods.
+# One label per line. Lines starting with # are ignored.
+
+# South Asian
+biryani
+dosa
+masala dosa
+idli
+vada
+chapati
+paratha
+pulao
+dal makhani
+palak paneer
+chana masala
+aloo gobi
+rajma
+pakora
+bhaji
+jalebi
+gulab jamun
+kheer
+rasgulla
+samosa
+
+# East Asian
+char siu
+peking duck
+roast duck
+bao
+pork bun
+har gow
+siu mai
+egg tart
+mochi
+onigiri
+rice ball
+udon noodles
+soba noodles
+tempura
+gyoza
+takoyaki
+okonomiyaki
+yakitori
+teriyaki chicken
+teriyaki salmon
+ramen bowl
+miso soup bowl
+
+# Southeast Asian
+pad see ew
+tom yum soup
+green curry
+massaman curry
+satay
+rendang
+nasi goreng
+mee goreng
+laksa
+char kway teow
+banh mi
+pho bowl
+
+# Trending / health bowls
+acai bowl
+smoothie bowl
+poke bowl
+grain bowl
+buddha bowl
+overnight oats
+granola bowl
+chia pudding
+protein bar
+avocado toast
+
+# Beverages
+coffee
+espresso
+latte
+cappuccino
+americano
+flat white
+green tea
+chai tea
+iced coffee
+iced tea
+bubble tea
+beer
+cola
+soda
+
+# International (additional)
+spring roll
+potstickers
+shawarma wrap
+pad thai noodles
+biryani rice
+dim sum basket
+
+# Fresh fruits (missing from Food-101 as standalone items)
+strawberry
+fresh strawberry
+whole strawberry
+blueberry
+raspberry
+blackberry
+mango slice
+kiwi
+kiwi fruit
+banana
+orange slice
+grapes
+watermelon slice
+pineapple slice
+peach
+cherry
+lychee
+papaya
+
+# Western breakfast & common foods (missing from Food-101)
+fried egg
+sunny side up egg
+scrambled eggs
+poached egg
+boiled egg
+hard boiled egg
+bacon
+crispy bacon
+bacon strips
+breakfast sausage
+sausage link
+grilled sausage
+hash brown
+hash browns
+potato hash
+buttered toast
+toast
+white toast
+brown toast
+grilled tomato
+baked beans
+black pudding
+fried bread
+mushrooms on toast
+full english breakfast
+english muffin
+bagel with cream cheese
+smoked salmon
+cream cheese bagel
+
+# Common everyday foods also missing from Food-101
+roast chicken
+roast beef
+roast pork
+grilled chicken breast
+chicken breast
+chicken thigh
+chicken drumstick
+pork belly
+spare ribs
+lamb chop
+grilled fish fillet
+fish fillet
+battered fish
+fish fingers
+prawn
+prawns
+shrimp
+calamari
+soup
+vegetable soup
+tomato soup
+chicken soup
+noodle soup
+fried noodles
+steamed rice
+white rice
+brown rice
+fried rice bowl
+congee
+porridge
+oatmeal
+granola
+cereal bowl
+yogurt
+greek yogurt
+cottage cheese
+sandwich wrap
+wrap
+burrito wrap
+quesadilla
+taco
+empanada
+calzone
+stromboli
+flatbread
+naan bread
+pita bread
+focaccia
+baguette
+dinner roll
+croissant sandwich
+fruit salad
+green salad
+side salad
+coleslaw
+potato salad
+pasta salad
+corn on the cob
+mashed potato
+roast potato
+baked potato
+sweet potato fries
+onion rings
+garlic bread slice
+bruschetta slice
+caprese
+antipasto
+charcuterie
+cheese board

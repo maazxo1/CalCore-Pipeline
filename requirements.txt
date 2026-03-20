@@ -1,0 +1,46 @@
+# ============================================================
+# Food Analysis Pipeline — Python dependencies
+# Tested on Python 3.10 / 3.11, CUDA 12.x, Windows & Linux
+# ============================================================
+
+# --- Web framework -----------------------------------------------
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# --- Vision / image processing -----------------------------------
+opencv-python==4.8.1.78
+Pillow==10.1.0
+
+# --- Numerical ---------------------------------------------------
+numpy==1.24.3
+scipy==1.11.4
+
+# --- Deep learning -----------------------------------------------
+# Install the CUDA build matching your driver from https://pytorch.org/
+# e.g. for CUDA 12.1:
+#   pip install torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu121
+torch==2.7.1
+torchvision==0.22.1
+
+# HuggingFace ecosystem (CLIP + ViT classifiers, tokenisers)
+transformers==4.57.1
+accelerate>=1.0.0
+safetensors>=0.4.0
+
+# EfficientNet classifier
+timm>=0.9.16
+
+# --- Object detection / segmentation -----------------------------
+ultralytics==8.0.196
+
+# FastSAM segmenter (install directly from GitHub)
+segment-anything @ git+https://github.com/facebookresearch/segment-anything.git
+
+# --- Utilities ---------------------------------------------------
+requests==2.32.5
+python-dotenv==1.0.1
+
+# --- Testing -----------------------------------------------------
+pytest==8.3.5
+pytest-benchmark==5.1.0
